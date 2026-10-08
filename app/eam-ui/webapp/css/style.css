@@ -232,9 +232,9 @@
     border-radius: 50%;
 }
 
-.eamStatusAvailable { background: #2e7d5b; }
-.eamStatusAssigned  { background: #142b4a; }
-.eamStatusRepair    { background: #c77700; }
+.eamStatusAvailable { background: #4cbb17; }
+.eamStatusAssigned  { background: #5396ee; }
+.eamStatusRepair    { background: #f21313; }
 .eamStatusRetired   { background: #9aa2ad; }
 
 .eamStatusLabel {
@@ -270,9 +270,9 @@
     border-radius: 999px;
 }
 
-.eamBarAvailable .sapMPIBar { background: #2e7d5b; }
-.eamBarAssigned  .sapMPIBar { background: #142b4a; }
-.eamBarRepair    .sapMPIBar { background: #c77700; }
+.eamBarAvailable .sapMPIBar { background: #4cbb17; }
+.eamBarAssigned  .sapMPIBar { background: #5396ee; }
+.eamBarRepair    .sapMPIBar { background: #f21313; }
 .eamBarRetired   .sapMPIBar { background: #9aa2ad; }
 
 /* ---------- Toolbars & filters ---------- */
