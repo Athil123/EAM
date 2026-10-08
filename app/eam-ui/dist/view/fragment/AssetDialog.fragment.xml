@@ -1,0 +1,90 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+
+    <Dialog
+        title="{asset>/title}"
+        contentWidth="440px"
+        stretchOnPhone="true"
+        class="eamDialog">
+
+        <content>
+            <VBox class="sapUiSmallMargin eamDialogContent">
+                <items>
+
+                    <Label text="Asset name" required="true"/>
+                    <Input
+                        value="{asset>/AssetName}"
+                        maxLength="100"
+                        valueState="{asset>/state/AssetName}"
+                        valueStateText="Asset name is required"
+                        liveChange=".onFieldChange"/>
+
+                    <Label text="Asset type" required="true"/>
+                    <ComboBox
+                        width="100%"
+                        value="{asset>/AssetType}"
+                        valueState="{asset>/state/AssetType}"
+                        valueStateText="Asset type is required"
+                        change=".onFieldChange">
+                        <items>
+                            <core:Item key="Laptop" text="Laptop"/>
+                            <core:Item key="Monitor" text="Monitor"/>
+                            <core:Item key="Phone" text="Phone"/>
+                            <core:Item key="Tablet" text="Tablet"/>
+                        </items>
+                    </ComboBox>
+
+                    <Label text="Serial number" required="true"/>
+                    <Input
+                        value="{asset>/SerialNumber}"
+                        maxLength="100"
+                        valueState="{asset>/state/SerialNumber}"
+                        valueStateText="Serial number is required"
+                        liveChange=".onFieldChange"/>
+
+                    <Label text="Purchase date"/>
+                    <DatePicker
+                        width="100%"
+                        value="{asset>/PurchaseDate}"
+                        valueFormat="yyyy-MM-dd"
+                        displayFormat="medium"/>
+
+                    <Label text="Price"/>
+                    <Input
+                        value="{asset>/Price}"
+                        placeholder="e.g. 1200.00"
+                        valueState="{asset>/state/Price}"
+                        valueStateText="Enter a valid price, e.g. 1200.00"
+                        liveChange=".onFieldChange"/>
+
+                    <Label text="Status"/>
+                    <Select
+                        width="100%"
+                        visible="{= !${asset>/statusLocked} }"
+                        selectedKey="{asset>/Status}">
+                        <items>
+                            <core:Item key="AVAILABLE" text="Available"/>
+                            <core:Item key="REPAIR" text="Repair"/>
+                            <core:Item key="RETIRED" text="Retired"/>
+                        </items>
+                    </Select>
+                    <Input
+                        visible="{asset>/statusLocked}"
+                        editable="false"
+                        value="Assigned (return the asset to change its status)"/>
+
+                </items>
+            </VBox>
+        </content>
+
+        <beginButton>
+            <Button text="{asset>/confirmText}" type="Emphasized" press=".onSaveAsset"/>
+        </beginButton>
+        <endButton>
+            <Button text="Cancel" press=".onCancelAsset"/>
+        </endButton>
+
+    </Dialog>
+
+</core:FragmentDefinition>

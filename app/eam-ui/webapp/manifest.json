@@ -1,0 +1,183 @@
+{
+    "_version": "1.65.0",
+
+    "sap.app": {
+        "id": "eam.ui",
+        "type": "application",
+
+        "applicationVersion": {
+            "version": "1.0.0"
+        },
+
+        "title": "EAM Asset Management",
+        "description": "Enterprise Asset Management application",
+
+        "dataSources": {
+            "mainService": {
+                "uri": "/odata/v4/asset/",
+                "type": "OData",
+                "settings": {
+                    "odataVersion": "4.0"
+                }
+            }
+        }
+    },
+
+    "sap.cloud": {
+        "public": true,
+        "service": "eam"
+    },
+
+    "sap.ui": {
+        "technology": "UI5",
+
+        "deviceTypes": {
+            "desktop": true,
+            "tablet": true,
+            "phone": true
+        }
+    },
+
+    "sap.ui5": {
+
+      "resources": {
+        "css": [
+            {
+                "uri": "css/style.css"
+            }
+        ]
+    },
+
+      "rootView": {
+          "viewName": "eam.ui.view.App",
+          "type": "XML",
+          "async": true,
+          "id": "app"
+      },
+
+      "dependencies": {
+          "minUI5Version": "1.120.0",
+
+          "libs": {
+              "sap.m": {},
+              "sap.ui.core": {},
+              "sap.tnt": {}
+          }
+      },
+
+      "models": {
+          "": {
+              "type": "sap.ui.model.odata.v4.ODataModel",
+
+              "settings": {
+                  "operationMode": "Server",
+                  "autoExpandSelect": true,
+                  "earlyRequests": false,
+                  "synchronizationMode": "None"
+              },
+
+              "dataSource": "mainService"
+          }
+      },
+
+      "routing": {
+
+          "config": {
+              "routerClass": "sap.m.routing.Router",
+              "type": "View",
+              "viewType": "XML",
+              "path": "eam.ui.view",
+              "controlId": "app",
+              "controlAggregation": "pages",
+              "async": true
+          },
+
+          "routes": [
+
+              {
+                  "pattern": "",
+                  "name": "dashboard",
+                  "target": "dashboard"
+              },
+
+              {
+                  "pattern": "employees",
+                  "name": "employees",
+                  "target": "employees"
+              },
+
+              {
+                  "pattern": "employees/{employeeId}",
+                  "name": "employeeDetail",
+                  "target": "employeeDetail"
+              },
+
+              {
+                  "pattern": "assets",
+                  "name": "assets",
+                  "target": "assets"
+              },
+
+              {
+                  "pattern": "assets/{assetId}",
+                  "name": "assetDetail",
+                  "target": "assetDetail"
+              },
+
+              {
+                  "pattern": "assignments",
+                  "name": "assignments",
+                  "target": "assignments"
+              },
+
+              {
+                    "pattern": "reports",
+                    "name": "reports",
+                    "target": "reports"
+                }
+
+          ],
+
+          "targets": {
+
+            "dashboard": {
+            "viewName": "Dashboard",
+            "viewId": "dashboard"
+        },
+
+            "employees": {
+            "viewName": "Employees",
+            "viewId": "employees"
+        },
+
+            "employeeDetail": {
+            "viewName": "EmployeeDetail",
+            "viewId": "employeeDetail"
+        },
+
+            "assets": {
+            "viewName": "Assets",
+            "viewId": "assets"
+        },
+
+            "assetDetail": {
+            "viewName": "AssetDetail",
+            "viewId": "assetDetail"
+        },
+
+            "assignments": {
+            "viewName": "Assignments",
+            "viewId": "assignments"
+        },
+
+            "reports": {
+            "viewName": "Reports",
+            "viewId": "reports"
+        }
+
+          }
+
+      }
+
+    }
+}

@@ -1,0 +1,82 @@
+<mvc:View
+    controllerName="eam.ui.controller.App"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:tnt="sap.tnt"
+    displayBlock="true">
+
+    <tnt:ToolPage id="toolPage" class="eamToolPage">
+
+        <tnt:header>
+            <tnt:ToolHeader class="eamToolHeader">
+                <Button
+                    icon="sap-icon://menu2"
+                    type="Transparent"
+                    tooltip="Toggle navigation"
+                    press=".onSideNavButtonPress"/>
+
+                <HBox alignItems="Center" class="eamBrand">
+                    <items>
+                        <!-- <Text text="EAM" class="eamBrandMark"/> -->
+                        <Text text="Asset Management" class="eamBrandName"/>
+                    </items>
+                </HBox>
+            </tnt:ToolHeader>
+        </tnt:header>
+
+        <tnt:sideContent>
+
+            <tnt:SideNavigation
+                id="sideNavigation"
+                selectedKey="dashboard"
+                class="eamSideNav">
+
+                <tnt:NavigationList>
+
+                    <tnt:NavigationListItem
+                        key="dashboard"
+                        text="Dashboard"
+                        icon="sap-icon://home"
+                        select=".onNavigationSelect"/>
+
+                    <tnt:NavigationListItem
+                        key="employees"
+                        text="Employees"
+                        icon="sap-icon://employee"
+                        select=".onNavigationSelect"/>
+
+                    <tnt:NavigationListItem
+                        key="assets"
+                        text="Assets"
+                        icon="sap-icon://laptop"
+                        select=".onNavigationSelect"/>
+
+                    <tnt:NavigationListItem
+                        key="assignments"
+                        text="Assignments"
+                        icon="sap-icon://activity-items"
+                        select=".onNavigationSelect"/>
+
+                    <tnt:NavigationListItem
+                        key="reports"
+                        text="Reports"
+                        icon="sap-icon://bar-chart"
+                        select=".onNavigationSelect"/>
+
+                </tnt:NavigationList>
+
+            </tnt:SideNavigation>
+
+        </tnt:sideContent>
+
+        <tnt:mainContents>
+
+            <App
+                id="app"
+                class="eamApp"/>
+
+        </tnt:mainContents>
+
+    </tnt:ToolPage>
+
+</mvc:View>

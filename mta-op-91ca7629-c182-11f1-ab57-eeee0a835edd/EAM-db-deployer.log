@@ -1,0 +1,758 @@
+#2026 10 06 12:37:21.994#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10811#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:36:55.059371] Updated app with guid 9531f7fa-4c33-4611-b045-6530a56e307f ({"lifecycle"=>{"data"=>{"buildpacks"=>["nodejs_buildpack"]}, "type"=>"buildpack"}}) (STDOUT, API)#
+#2026 10 06 12:37:21.994#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10811#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:36:55.130673] Updating process: "web" (STDOUT, API)#
+#2026 10 06 12:37:21.994#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10811#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:02.090453] Uploading app package for app with guid 9531f7fa-4c33-4611-b045-6530a56e307f (STDOUT, API)#
+#2026 10 06 12:37:21.994#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10811#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:02.248070] Updated app with guid 9531f7fa-4c33-4611-b045-6530a56e307f ({"environment_variables"=>"[PRIVATE DATA HIDDEN]"}) (STDOUT, API)#
+#2026 10 06 12:37:21.994#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10811#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:12.127389] Creating build for app with guid 9531f7fa-4c33-4611-b045-6530a56e307f (STDOUT, API)#
+#2026 10 06 12:37:21.994#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10811#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:12.589355] Downloading nodejs_buildpack... (STDOUT, STG)#
+#2026 10 06 12:37:21.994#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10811#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:12.636618] Downloaded nodejs_buildpack (STDOUT, STG)#
+#2026 10 06 12:37:21.994#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10811#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:12.636740] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 creating container for instance ac6b1afd-8eb5-4057-ae22-1f95e21d5d85 (STDOUT, STG)#
+#2026 10 06 12:37:21.994#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10811#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:13.456891] Security group rules were updated (STDOUT, STG)#
+#2026 10 06 12:37:21.994#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10811#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:13.526528] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 successfully created container for instance ac6b1afd-8eb5-4057-ae22-1f95e21d5d85 (STDOUT, STG)#
+#2026 10 06 12:37:21.994#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10811#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:14.234887] Downloading app package... (STDOUT, STG)#
+#2026 10 06 12:37:21.994#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10811#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:14.235473] Downloading build artifacts cache... (STDOUT, STG)#
+#2026 10 06 12:37:21.994#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10811#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:14.328791] Downloaded build artifacts cache (223B) (STDOUT, STG)#
+#2026 10 06 12:37:21.994#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10811#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:14.609340] Downloaded app package (2.4M) (STDOUT, STG)#
+#2026 10 06 12:37:21.994#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10811#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:14.745795] -----> Nodejs Buildpack version 1.9.4 (STDOUT, STG)#
+#2026 10 06 12:37:21.994#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10811#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:14.852609] -----> Bootstrapping python (STDOUT, STG)#
+#2026 10 06 12:37:21.994#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10811#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:14.852755] -----> Installing python 3.13.15 (STDOUT, STG)#
+#2026 10 06 12:37:21.994#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10811#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:14.852760] Copy [/tmp/buildpacks/5be6efbe8830cdb7/dependencies/6832464ec708e1392d482a6034aa2c94/python_3.13.15_linux_x64_cflinuxfs4_0c9cd9fd.tgz] (STDOUT, STG)#
+#2026 10 06 12:37:21.994#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10811#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:19.574327] -----> Installing binaries (STDOUT, STG)#
+#2026 10 06 12:37:21.994#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10811#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:19.574364] engines.node (package.json): ^24 (STDOUT, STG)#
+#2026 10 06 12:37:21.994#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10811#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:19.574369] engines.npm (package.json): unspecified (use default) (STDOUT, STG)#
+#2026 10 06 12:37:21.994#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10811#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:19.574371] -----> Installing node 24.19.0 (STDOUT, STG)#
+#2026 10 06 12:37:21.994#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10811#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:19.574525] Copy [/tmp/buildpacks/5be6efbe8830cdb7/dependencies/cf9035c55d85610a9158faa009b7a7b5/node_24.19.0_linux_x64_cflinuxfs4_9ab26efa.tgz] (STDOUT, STG)#
+#2026 10 06 12:37:32.030#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13328#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:22.327536] Using default npm version: 11.17.0 (STDOUT, STG)#
+#2026 10 06 12:37:32.030#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13328#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:22.327578] -----> Installing yarn 1.22.22 (STDOUT, STG)#
+#2026 10 06 12:37:32.030#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13328#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:22.327713] Copy [/tmp/buildpacks/5be6efbe8830cdb7/dependencies/e4fe26756e9984a665478d350474fa2e/yarn_1.22.22_linux_noarch_any-stack_b6132b86.tgz] (STDOUT, STG)#
+#2026 10 06 12:37:32.030#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13328#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:22.749043] Installed yarn 1.22.22 (STDOUT, STG)#
+#2026 10 06 12:37:32.030#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13328#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:22.749084] -----> Creating runtime environment (STDOUT, STG)#
+#2026 10 06 12:37:32.030#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13328#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:22.750794] NODE_ENV=production (STDOUT, STG)#
+#2026 10 06 12:37:32.030#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13328#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:22.750834] NODE_HOME=/tmp/contents2435884496/deps/0/node (STDOUT, STG)#
+#2026 10 06 12:37:32.030#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13328#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:22.750839] NODE_MODULES_CACHE=true (STDOUT, STG)#
+#2026 10 06 12:37:32.030#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13328#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:22.750842] NODE_VERBOSE=false (STDOUT, STG)#
+#2026 10 06 12:37:32.030#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13328#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:22.750846] NPM_CONFIG_LOGLEVEL=error (STDOUT, STG)#
+#2026 10 06 12:37:32.030#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13328#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:22.750851] NPM_CONFIG_PRODUCTION=true (STDOUT, STG)#
+#2026 10 06 12:37:32.030#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13328#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:22.750854] -----> Building dependencies (STDOUT, STG)#
+#2026 10 06 12:37:32.030#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13328#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:22.750858] Prebuild detected (node_modules already exists) (STDOUT, STG)#
+#2026 10 06 12:37:32.030#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13328#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:22.750877] Rebuilding any native modules (STDOUT, STG)#
+#2026 10 06 12:37:32.030#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13328#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:23.516271] rebuilt dependencies successfully (STDOUT, STG)#
+#2026 10 06 12:37:32.030#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13328#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:23.598901] Installing any new modules (package.json + package-lock.json) (STDOUT, STG)#
+#2026 10 06 12:37:32.030#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13328#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:24.194460] up to date in 495ms (STDOUT, STG)#
+#2026 10 06 12:37:32.030#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13328#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:24.194910] 4 packages are looking for funding (STDOUT, STG)#
+#2026 10 06 12:37:32.030#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13328#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:24.194948] run `npm fund` for details (STDOUT, STG)#
+#2026 10 06 12:37:32.030#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13328#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:25.290127] Contrast Security no credentials found. Will not write environment files. (STDOUT, STG)#
+#2026 10 06 12:37:42.035#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13333#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:35.999057] Exit status 0 (STDOUT, STG)#
+#2026 10 06 12:37:42.035#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13333#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:35.999124] Uploading droplet, build artifacts cache... (STDOUT, STG)#
+#2026 10 06 12:37:42.035#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13333#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:35.999171] Uploading droplet... (STDOUT, STG)#
+#2026 10 06 12:37:42.035#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13333#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:35.999246] Uploading build artifacts cache... (STDOUT, STG)#
+#2026 10 06 12:37:42.035#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13333#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:36.036246] Uploaded build artifacts cache (226B) (STDOUT, STG)#
+#2026 10 06 12:37:42.035#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13333#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:36.724168] Creating droplet for app with guid 9531f7fa-4c33-4611-b045-6530a56e307f (STDOUT, API)#
+#2026 10 06 12:37:42.035#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13333#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:40.793152] Uploaded droplet (59.4M) (STDOUT, STG)#
+#2026 10 06 12:37:42.035#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13333#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:40.822212] Uploading complete (STDOUT, STG)#
+#2026 10 06 12:37:42.035#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13333#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:41.631649] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 stopping instance ac6b1afd-8eb5-4057-ae22-1f95e21d5d85 (STDOUT, STG)#
+#2026 10 06 12:37:42.035#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13333#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:41.631719] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 destroying container for instance ac6b1afd-8eb5-4057-ae22-1f95e21d5d85 (STDOUT, STG)#
+#2026 10 06 12:37:42.035#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13333#
+[PollStageAppStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:41.688239] Staging complete for build ac6b1afd-8eb5-4057-ae22-1f95e21d5d85 (STDOUT, API)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:36:55.059371] Updated app with guid 9531f7fa-4c33-4611-b045-6530a56e307f ({"lifecycle"=>{"data"=>{"buildpacks"=>["nodejs_buildpack"]}, "type"=>"buildpack"}}) (STDOUT, API)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:36:55.130673] Updating process: "web" (STDOUT, API)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:02.090453] Uploading app package for app with guid 9531f7fa-4c33-4611-b045-6530a56e307f (STDOUT, API)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:02.248070] Updated app with guid 9531f7fa-4c33-4611-b045-6530a56e307f ({"environment_variables"=>"[PRIVATE DATA HIDDEN]"}) (STDOUT, API)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:12.127389] Creating build for app with guid 9531f7fa-4c33-4611-b045-6530a56e307f (STDOUT, API)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:12.589355] Downloading nodejs_buildpack... (STDOUT, STG)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:12.636618] Downloaded nodejs_buildpack (STDOUT, STG)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:12.636740] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 creating container for instance ac6b1afd-8eb5-4057-ae22-1f95e21d5d85 (STDOUT, STG)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:13.456891] Security group rules were updated (STDOUT, STG)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:13.526528] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 successfully created container for instance ac6b1afd-8eb5-4057-ae22-1f95e21d5d85 (STDOUT, STG)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:14.234887] Downloading app package... (STDOUT, STG)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:14.235473] Downloading build artifacts cache... (STDOUT, STG)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:14.328791] Downloaded build artifacts cache (223B) (STDOUT, STG)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:14.609340] Downloaded app package (2.4M) (STDOUT, STG)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:14.745795] -----> Nodejs Buildpack version 1.9.4 (STDOUT, STG)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:14.852609] -----> Bootstrapping python (STDOUT, STG)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:14.852755] -----> Installing python 3.13.15 (STDOUT, STG)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:14.852760] Copy [/tmp/buildpacks/5be6efbe8830cdb7/dependencies/6832464ec708e1392d482a6034aa2c94/python_3.13.15_linux_x64_cflinuxfs4_0c9cd9fd.tgz] (STDOUT, STG)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:19.574327] -----> Installing binaries (STDOUT, STG)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:19.574364] engines.node (package.json): ^24 (STDOUT, STG)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:19.574369] engines.npm (package.json): unspecified (use default) (STDOUT, STG)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:19.574371] -----> Installing node 24.19.0 (STDOUT, STG)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:19.574525] Copy [/tmp/buildpacks/5be6efbe8830cdb7/dependencies/cf9035c55d85610a9158faa009b7a7b5/node_24.19.0_linux_x64_cflinuxfs4_9ab26efa.tgz] (STDOUT, STG)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:22.327536] Using default npm version: 11.17.0 (STDOUT, STG)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:22.327578] -----> Installing yarn 1.22.22 (STDOUT, STG)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:22.327713] Copy [/tmp/buildpacks/5be6efbe8830cdb7/dependencies/e4fe26756e9984a665478d350474fa2e/yarn_1.22.22_linux_noarch_any-stack_b6132b86.tgz] (STDOUT, STG)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:22.749043] Installed yarn 1.22.22 (STDOUT, STG)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:22.749084] -----> Creating runtime environment (STDOUT, STG)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:22.750794] NODE_ENV=production (STDOUT, STG)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:22.750834] NODE_HOME=/tmp/contents2435884496/deps/0/node (STDOUT, STG)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:22.750839] NODE_MODULES_CACHE=true (STDOUT, STG)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:22.750842] NODE_VERBOSE=false (STDOUT, STG)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:22.750846] NPM_CONFIG_LOGLEVEL=error (STDOUT, STG)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:22.750851] NPM_CONFIG_PRODUCTION=true (STDOUT, STG)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:22.750854] -----> Building dependencies (STDOUT, STG)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:22.750858] Prebuild detected (node_modules already exists) (STDOUT, STG)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:22.750877] Rebuilding any native modules (STDOUT, STG)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:23.516271] rebuilt dependencies successfully (STDOUT, STG)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:23.598901] Installing any new modules (package.json + package-lock.json) (STDOUT, STG)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:24.194460] up to date in 495ms (STDOUT, STG)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:24.194910] 4 packages are looking for funding (STDOUT, STG)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:24.194948] run `npm fund` for details (STDOUT, STG)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:25.290127] Contrast Security no credentials found. Will not write environment files. (STDOUT, STG)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:35.999057] Exit status 0 (STDOUT, STG)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:35.999124] Uploading droplet, build artifacts cache... (STDOUT, STG)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:35.999171] Uploading droplet... (STDOUT, STG)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:35.999246] Uploading build artifacts cache... (STDOUT, STG)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:36.036246] Uploaded build artifacts cache (226B) (STDOUT, STG)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:36.724168] Creating droplet for app with guid 9531f7fa-4c33-4611-b045-6530a56e307f (STDOUT, API)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:40.793152] Uploaded droplet (59.4M) (STDOUT, STG)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:40.822212] Uploading complete (STDOUT, STG)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:41.631649] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 stopping instance ac6b1afd-8eb5-4057-ae22-1f95e21d5d85 (STDOUT, STG)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:41.631719] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 destroying container for instance ac6b1afd-8eb5-4057-ae22-1f95e21d5d85 (STDOUT, STG)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:41.688239] Staging complete for build ac6b1afd-8eb5-4057-ae22-1f95e21d5d85 (STDOUT, API)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:42.105744] Updated app with guid 9531f7fa-4c33-4611-b045-6530a56e307f ({:droplet_guid=>"4d3b898e-0269-4b1c-a946-511bbc92eb2a"}) (STDOUT, API)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:42.605430] Cell 684caff8-89cd-492b-be01-b3d0835f1763 creating container for instance 815b592c-a340-4571-b7d4-7dba3574d5cf (STDOUT, CELL)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:43.436339] Security group rules were updated (STDOUT, CELL)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:43.495184] Cell 684caff8-89cd-492b-be01-b3d0835f1763 successfully created container for instance 815b592c-a340-4571-b7d4-7dba3574d5cf (STDOUT, CELL)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:43.508132] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 successfully destroyed container for instance ac6b1afd-8eb5-4057-ae22-1f95e21d5d85 (STDOUT, STG)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:48.800200] Invoking pre-start scripts. (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:49.039078] Invoking start command. (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:49.563539] > start (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:49.563570] > node node_modules/@sap/hdi-deploy/deploy.js --use-hdb --parameter com.sap.hana.di.table/try_fast_table_migration=true (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:49.729933] VCAP_SERVICES: (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:49.730373] { (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:49.730392] "hana": [ (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:49.730395] { (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:49.730399] "name": "EAM-db", (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:49.730402] "label": "hana", (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:49.730406] "plan": "hdi-shared", (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:49.730408] "credentials": { (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:49.730412] "schema": "477704A43EBE49F388724491B0FB6FF0", (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:49.730418] "database_id": "6c34b533-4ff7-4f52-9e34-3770efab830e", (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:49.730423] "user": "477704A43EBE49F388724491B0FB6FF0_6NWTM2MN6RNQAJU3UTHS30Z6W_RT", (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:49.730426] "hdi_user": "477704A43EBE49F388724491B0FB6FF0_6NWTM2MN6RNQAJU3UTHS30Z6W_DT" (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:49.730445] }, (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:49.730453] "tags": [ (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:49.730455] "hana", (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:49.730458] "database", (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:49.730460] "relational" (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:49.730462] ] (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:49.730465] } (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:49.730467] ] (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:37:52.079#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13340#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:49.730469] } (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:02.087#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10064#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:54.063157] @sap/hdi-deploy, version 5.7.0 (mode default), server version unknown (0.0.0.0), cloud version , node version 24.19.0, HDI version -1, container API version -1 (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:02.087#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10064#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:54.063266] Deployment started at 2026-10-06 12:37:54 (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:02.087#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10064#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:54.063286] Using hdb@2.30.1 for connection (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:02.087#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10064#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:54.063290] Detection of server version failed; root cause: HANA Database instance is stopped (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:02.087#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10064#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:54.063471] Detection of cloud version failed; root cause: HANA Database instance is stopped (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:02.087#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10064#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:54.063513] Detection of container API version failed; root cause: HANA Database instance is stopped (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:02.087#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10064#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:54.063537] Detection of HDI version failed; root cause: HANA Database instance is stopped (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:02.087#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10064#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:54.063937] Deployment ended at 2026-10-06 12:37:54 (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:02.087#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10064#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:54.064165] Error: Option parameter is not supported by the server; based on detected server version unknown (STDERR, APP/TASK/deploy)#
+#2026 10 06 12:38:02.087#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10064#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:54.064680] (4s 450ms) (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:02.087#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10064#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:54.093751] npm notice (STDERR, APP/TASK/deploy)#
+#2026 10 06 12:38:02.087#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10064#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:54.093810] npm notice New major version of npm available! 11.17.0 -> 12.2.0 (STDERR, APP/TASK/deploy)#
+#2026 10 06 12:38:02.087#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10064#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:54.093844] npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0 (STDERR, APP/TASK/deploy)#
+#2026 10 06 12:38:02.087#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10064#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:54.093846] npm notice To update run: npm install -g npm@12.2.0 (STDERR, APP/TASK/deploy)#
+#2026 10 06 12:38:02.087#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10064#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:54.093849] npm notice (STDERR, APP/TASK/deploy)#
+#2026 10 06 12:38:02.087#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10064#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:54.191354] Exit status 1 (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:02.087#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10064#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:54.585559] Cell 684caff8-89cd-492b-be01-b3d0835f1763 stopping instance 815b592c-a340-4571-b7d4-7dba3574d5cf (STDOUT, CELL)#
+#2026 10 06 12:38:02.087#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10064#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:54.585596] Cell 684caff8-89cd-492b-be01-b3d0835f1763 destroying container for instance 815b592c-a340-4571-b7d4-7dba3574d5cf (STDOUT, CELL)#
+#2026 10 06 12:38:02.087#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10064#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:57.493042] Cell 684caff8-89cd-492b-be01-b3d0835f1763 successfully destroyed container for instance 815b592c-a340-4571-b7d4-7dba3574d5cf (STDOUT, CELL)#
+#2026 10 06 12:38:12.151#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10835#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:54.063157] @sap/hdi-deploy, version 5.7.0 (mode default), server version unknown (0.0.0.0), cloud version , node version 24.19.0, HDI version -1, container API version -1 (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:12.151#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10835#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:54.063266] Deployment started at 2026-10-06 12:37:54 (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:12.151#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10835#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:54.063286] Using hdb@2.30.1 for connection (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:12.151#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10835#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:54.063290] Detection of server version failed; root cause: HANA Database instance is stopped (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:12.151#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10835#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:54.063471] Detection of cloud version failed; root cause: HANA Database instance is stopped (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:12.151#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10835#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:54.063513] Detection of container API version failed; root cause: HANA Database instance is stopped (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:12.151#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10835#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:54.063537] Detection of HDI version failed; root cause: HANA Database instance is stopped (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:12.151#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10835#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:54.063937] Deployment ended at 2026-10-06 12:37:54 (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:12.151#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10835#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:54.064165] Error: Option parameter is not supported by the server; based on detected server version unknown (STDERR, APP/TASK/deploy)#
+#2026 10 06 12:38:12.151#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10835#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:54.064680] (4s 450ms) (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:12.151#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10835#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:54.093751] npm notice (STDERR, APP/TASK/deploy)#
+#2026 10 06 12:38:12.151#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10835#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:54.093810] npm notice New major version of npm available! 11.17.0 -> 12.2.0 (STDERR, APP/TASK/deploy)#
+#2026 10 06 12:38:12.151#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10835#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:54.093844] npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0 (STDERR, APP/TASK/deploy)#
+#2026 10 06 12:38:12.151#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10835#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:54.093846] npm notice To update run: npm install -g npm@12.2.0 (STDERR, APP/TASK/deploy)#
+#2026 10 06 12:38:12.151#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10835#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:54.093849] npm notice (STDERR, APP/TASK/deploy)#
+#2026 10 06 12:38:12.151#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10835#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:54.191354] Exit status 1 (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:12.151#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10835#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:54.585559] Cell 684caff8-89cd-492b-be01-b3d0835f1763 stopping instance 815b592c-a340-4571-b7d4-7dba3574d5cf (STDOUT, CELL)#
+#2026 10 06 12:38:12.151#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10835#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:54.585596] Cell 684caff8-89cd-492b-be01-b3d0835f1763 destroying container for instance 815b592c-a340-4571-b7d4-7dba3574d5cf (STDOUT, CELL)#
+#2026 10 06 12:38:12.151#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10835#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:37:57.493042] Cell 684caff8-89cd-492b-be01-b3d0835f1763 successfully destroyed container for instance 815b592c-a340-4571-b7d4-7dba3574d5cf (STDOUT, CELL)#
+#2026 10 06 12:38:12.151#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10835#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:05.533122] Cell 77283d80-dfa7-40ba-ba4e-265aef112085 creating container for instance 0a5d9fd7-f4c1-4c3f-afed-cab45f3d5f13 (STDOUT, CELL)#
+#2026 10 06 12:38:12.151#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10835#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:06.557697] Security group rules were updated (STDOUT, CELL)#
+#2026 10 06 12:38:12.151#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10835#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:06.663074] Cell 77283d80-dfa7-40ba-ba4e-265aef112085 successfully created container for instance 0a5d9fd7-f4c1-4c3f-afed-cab45f3d5f13 (STDOUT, CELL)#
+#2026 10 06 12:38:22.309#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13363#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:12.365064] Invoking pre-start scripts. (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:22.309#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13363#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:12.589936] Invoking start command. (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:22.309#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13363#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:13.048371] > start (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:22.309#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13363#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:13.048418] > node node_modules/@sap/hdi-deploy/deploy.js --use-hdb --parameter com.sap.hana.di.table/try_fast_table_migration=true (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:22.309#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13363#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:13.205295] VCAP_SERVICES: (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:22.309#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13363#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:13.206149] { (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:22.309#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13363#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:13.206175] "hana": [ (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:22.309#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13363#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:13.206178] { (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:22.309#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13363#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:13.206181] "name": "EAM-db", (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:22.309#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13363#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:13.206184] "label": "hana", (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:22.309#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13363#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:13.206190] "plan": "hdi-shared", (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:22.309#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13363#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:13.206193] "credentials": { (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:22.309#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13363#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:13.206196] "schema": "477704A43EBE49F388724491B0FB6FF0", (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:22.309#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13363#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:13.206198] "database_id": "6c34b533-4ff7-4f52-9e34-3770efab830e", (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:22.309#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13363#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:13.206206] "user": "477704A43EBE49F388724491B0FB6FF0_6NWTM2MN6RNQAJU3UTHS30Z6W_RT", (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:22.309#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13363#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:13.206212] "hdi_user": "477704A43EBE49F388724491B0FB6FF0_6NWTM2MN6RNQAJU3UTHS30Z6W_DT" (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:22.309#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13363#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:13.206214] }, (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:22.309#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13363#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:13.206217] "tags": [ (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:22.309#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13363#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:13.206219] "hana", (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:22.309#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13363#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:13.206221] "database", (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:22.309#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13363#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:13.206223] "relational" (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:22.309#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13363#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:13.206225] ] (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:22.309#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13363#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:13.206228] } (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:22.309#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13363#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:13.206231] ] (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:22.309#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13363#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:13.206232] } (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:22.309#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13363#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:17.489324] Error: Option parameter is not supported by the server; based on detected server version unknown (STDERR, APP/TASK/deploy)#
+#2026 10 06 12:38:22.309#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13363#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:17.489411] @sap/hdi-deploy, version 5.7.0 (mode default), server version unknown (0.0.0.0), cloud version , node version 24.19.0, HDI version -1, container API version -1 (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:22.309#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13363#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:17.489418] Deployment started at 2026-10-06 12:38:17 (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:22.309#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13363#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:17.489424] Using hdb@2.30.1 for connection (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:22.309#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13363#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:17.489426] Detection of server version failed; root cause: HANA Database instance is stopped (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:22.309#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13363#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:17.489432] Detection of cloud version failed; root cause: HANA Database instance is stopped (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:22.309#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13363#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:17.489434] Detection of container API version failed; root cause: HANA Database instance is stopped (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:22.309#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13363#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:17.489437] Detection of HDI version failed; root cause: HANA Database instance is stopped (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:22.309#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13363#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:17.489439] Deployment ended at 2026-10-06 12:38:17 (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:22.309#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13363#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:17.489442] (4s 391ms) (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:22.309#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13363#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:17.500747] npm notice (STDERR, APP/TASK/deploy)#
+#2026 10 06 12:38:22.309#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13363#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:17.500779] npm notice New major version of npm available! 11.17.0 -> 12.2.0 (STDERR, APP/TASK/deploy)#
+#2026 10 06 12:38:22.309#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13363#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:17.500784] npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0 (STDERR, APP/TASK/deploy)#
+#2026 10 06 12:38:22.309#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13363#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:17.500786] npm notice To update run: npm install -g npm@12.2.0 (STDERR, APP/TASK/deploy)#
+#2026 10 06 12:38:22.309#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13363#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:17.500788] npm notice (STDERR, APP/TASK/deploy)#
+#2026 10 06 12:38:22.309#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13363#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:17.586614] Exit status 1 (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:22.309#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13363#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:18.327902] Cell 77283d80-dfa7-40ba-ba4e-265aef112085 stopping instance 0a5d9fd7-f4c1-4c3f-afed-cab45f3d5f13 (STDOUT, CELL)#
+#2026 10 06 12:38:22.309#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13363#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:18.327935] Cell 77283d80-dfa7-40ba-ba4e-265aef112085 destroying container for instance 0a5d9fd7-f4c1-4c3f-afed-cab45f3d5f13 (STDOUT, CELL)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:12.365064] Invoking pre-start scripts. (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:12.589936] Invoking start command. (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:13.048371] > start (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:13.048418] > node node_modules/@sap/hdi-deploy/deploy.js --use-hdb --parameter com.sap.hana.di.table/try_fast_table_migration=true (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:13.205295] VCAP_SERVICES: (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:13.206149] { (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:13.206175] "hana": [ (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:13.206178] { (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:13.206181] "name": "EAM-db", (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:13.206184] "label": "hana", (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:13.206190] "plan": "hdi-shared", (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:13.206193] "credentials": { (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:13.206196] "schema": "477704A43EBE49F388724491B0FB6FF0", (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:13.206198] "database_id": "6c34b533-4ff7-4f52-9e34-3770efab830e", (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:13.206206] "user": "477704A43EBE49F388724491B0FB6FF0_6NWTM2MN6RNQAJU3UTHS30Z6W_RT", (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:13.206212] "hdi_user": "477704A43EBE49F388724491B0FB6FF0_6NWTM2MN6RNQAJU3UTHS30Z6W_DT" (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:13.206214] }, (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:13.206217] "tags": [ (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:13.206219] "hana", (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:13.206221] "database", (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:13.206223] "relational" (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:13.206225] ] (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:13.206228] } (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:13.206231] ] (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:13.206232] } (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:17.489324] Error: Option parameter is not supported by the server; based on detected server version unknown (STDERR, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:17.489411] @sap/hdi-deploy, version 5.7.0 (mode default), server version unknown (0.0.0.0), cloud version , node version 24.19.0, HDI version -1, container API version -1 (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:17.489418] Deployment started at 2026-10-06 12:38:17 (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:17.489424] Using hdb@2.30.1 for connection (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:17.489426] Detection of server version failed; root cause: HANA Database instance is stopped (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:17.489432] Detection of cloud version failed; root cause: HANA Database instance is stopped (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:17.489434] Detection of container API version failed; root cause: HANA Database instance is stopped (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:17.489437] Detection of HDI version failed; root cause: HANA Database instance is stopped (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:17.489439] Deployment ended at 2026-10-06 12:38:17 (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:17.489442] (4s 391ms) (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:17.500747] npm notice (STDERR, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:17.500779] npm notice New major version of npm available! 11.17.0 -> 12.2.0 (STDERR, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:17.500784] npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0 (STDERR, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:17.500786] npm notice To update run: npm install -g npm@12.2.0 (STDERR, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:17.500788] npm notice (STDERR, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:17.586614] Exit status 1 (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:18.327902] Cell 77283d80-dfa7-40ba-ba4e-265aef112085 stopping instance 0a5d9fd7-f4c1-4c3f-afed-cab45f3d5f13 (STDOUT, CELL)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:18.327935] Cell 77283d80-dfa7-40ba-ba4e-265aef112085 destroying container for instance 0a5d9fd7-f4c1-4c3f-afed-cab45f3d5f13 (STDOUT, CELL)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:22.548285] Cell 77283d80-dfa7-40ba-ba4e-265aef112085 successfully destroyed container for instance 0a5d9fd7-f4c1-4c3f-afed-cab45f3d5f13 (STDOUT, CELL)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:24.075613] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 creating container for instance 38a030d8-c9d8-45c1-ae40-0582ed14f6fb (STDOUT, CELL)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:24.912419] Security group rules were updated (STDOUT, CELL)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:24.974425] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 successfully created container for instance 38a030d8-c9d8-45c1-ae40-0582ed14f6fb (STDOUT, CELL)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:29.746417] Invoking pre-start scripts. (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:29.991063] Invoking start command. (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:30.511944] > start (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:30.511994] > node node_modules/@sap/hdi-deploy/deploy.js --use-hdb --parameter com.sap.hana.di.table/try_fast_table_migration=true (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:30.692462] VCAP_SERVICES: (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:30.693438] { (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:30.693458] "hana": [ (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:30.693461] { (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:30.693465] "name": "EAM-db", (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:30.693467] "label": "hana", (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:30.693473] "plan": "hdi-shared", (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:30.693475] "credentials": { (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:30.693481] "schema": "477704A43EBE49F388724491B0FB6FF0", (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:30.693483] "database_id": "6c34b533-4ff7-4f52-9e34-3770efab830e", (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:30.693491] "user": "477704A43EBE49F388724491B0FB6FF0_6NWTM2MN6RNQAJU3UTHS30Z6W_RT", (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:30.693496] "hdi_user": "477704A43EBE49F388724491B0FB6FF0_6NWTM2MN6RNQAJU3UTHS30Z6W_DT" (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:30.693505] }, (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:30.693509] "tags": [ (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:30.693512] "hana", (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:30.693517] "database", (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:30.693525] "relational" (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:30.693527] ] (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:30.693530] } (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:30.693532] ] (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:32.406#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13374#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:30.693535] } (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:42.329#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10850#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:34.942970] Error: Option parameter is not supported by the server; based on detected server version unknown (STDERR, APP/TASK/deploy)#
+#2026 10 06 12:38:42.329#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10850#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:34.943186] @sap/hdi-deploy, version 5.7.0 (mode default), server version unknown (0.0.0.0), cloud version , node version 24.19.0, HDI version -1, container API version -1 (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:42.329#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10850#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:34.943208] Deployment started at 2026-10-06 12:38:34 (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:42.329#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10850#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:34.943213] Using hdb@2.30.1 for connection (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:42.329#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10850#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:34.943217] Detection of server version failed; root cause: HANA Database instance is stopped (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:42.329#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10850#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:34.943222] Detection of cloud version failed; root cause: HANA Database instance is stopped (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:42.329#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10850#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:34.943227] Detection of container API version failed; root cause: HANA Database instance is stopped (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:42.329#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10850#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:34.943232] Detection of HDI version failed; root cause: HANA Database instance is stopped (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:42.329#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10850#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:34.943234] Deployment ended at 2026-10-06 12:38:34 (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:42.329#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10850#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:34.943242] (4s 375ms) (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:42.329#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10850#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:34.959770] npm notice (STDERR, APP/TASK/deploy)#
+#2026 10 06 12:38:42.329#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10850#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:34.959814] npm notice New major version of npm available! 11.17.0 -> 12.2.0 (STDERR, APP/TASK/deploy)#
+#2026 10 06 12:38:42.329#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10850#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:34.959820] npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0 (STDERR, APP/TASK/deploy)#
+#2026 10 06 12:38:42.329#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10850#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:34.959825] npm notice To update run: npm install -g npm@12.2.0 (STDERR, APP/TASK/deploy)#
+#2026 10 06 12:38:42.329#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10850#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:34.959828] npm notice (STDERR, APP/TASK/deploy)#
+#2026 10 06 12:38:42.329#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10850#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:35.059798] Exit status 1 (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:42.329#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10850#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:35.814983] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 stopping instance 38a030d8-c9d8-45c1-ae40-0582ed14f6fb (STDOUT, CELL)#
+#2026 10 06 12:38:42.329#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10850#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:35.815041] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 destroying container for instance 38a030d8-c9d8-45c1-ae40-0582ed14f6fb (STDOUT, CELL)#
+#2026 10 06 12:38:42.329#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10850#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:37.504485] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 successfully destroyed container for instance 38a030d8-c9d8-45c1-ae40-0582ed14f6fb (STDOUT, CELL)#
+#2026 10 06 12:38:52.518#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10084#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:34.942970] Error: Option parameter is not supported by the server; based on detected server version unknown (STDERR, APP/TASK/deploy)#
+#2026 10 06 12:38:52.518#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10084#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:34.943186] @sap/hdi-deploy, version 5.7.0 (mode default), server version unknown (0.0.0.0), cloud version , node version 24.19.0, HDI version -1, container API version -1 (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:52.518#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10084#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:34.943208] Deployment started at 2026-10-06 12:38:34 (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:52.518#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10084#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:34.943213] Using hdb@2.30.1 for connection (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:52.518#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10084#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:34.943217] Detection of server version failed; root cause: HANA Database instance is stopped (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:52.518#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10084#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:34.943222] Detection of cloud version failed; root cause: HANA Database instance is stopped (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:52.518#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10084#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:34.943227] Detection of container API version failed; root cause: HANA Database instance is stopped (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:52.518#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10084#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:34.943232] Detection of HDI version failed; root cause: HANA Database instance is stopped (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:52.518#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10084#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:34.943234] Deployment ended at 2026-10-06 12:38:34 (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:52.518#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10084#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:34.943242] (4s 375ms) (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:52.518#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10084#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:34.959770] npm notice (STDERR, APP/TASK/deploy)#
+#2026 10 06 12:38:52.518#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10084#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:34.959814] npm notice New major version of npm available! 11.17.0 -> 12.2.0 (STDERR, APP/TASK/deploy)#
+#2026 10 06 12:38:52.518#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10084#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:34.959820] npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0 (STDERR, APP/TASK/deploy)#
+#2026 10 06 12:38:52.518#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10084#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:34.959825] npm notice To update run: npm install -g npm@12.2.0 (STDERR, APP/TASK/deploy)#
+#2026 10 06 12:38:52.518#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10084#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:34.959828] npm notice (STDERR, APP/TASK/deploy)#
+#2026 10 06 12:38:52.518#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10084#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:35.059798] Exit status 1 (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:52.518#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10084#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:35.814983] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 stopping instance 38a030d8-c9d8-45c1-ae40-0582ed14f6fb (STDOUT, CELL)#
+#2026 10 06 12:38:52.518#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10084#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:35.815041] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 destroying container for instance 38a030d8-c9d8-45c1-ae40-0582ed14f6fb (STDOUT, CELL)#
+#2026 10 06 12:38:52.518#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10084#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:37.504485] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 successfully destroyed container for instance 38a030d8-c9d8-45c1-ae40-0582ed14f6fb (STDOUT, CELL)#
+#2026 10 06 12:38:52.518#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10084#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:45.513940] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 creating container for instance 7dd27bc5-08a0-402d-b81a-dad14c3de85a (STDOUT, CELL)#
+#2026 10 06 12:38:52.518#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10084#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:46.332706] Security group rules were updated (STDOUT, CELL)#
+#2026 10 06 12:38:52.518#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10084#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:46.383312] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 successfully created container for instance 7dd27bc5-08a0-402d-b81a-dad14c3de85a (STDOUT, CELL)#
+#2026 10 06 12:38:52.518#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10084#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:51.716839] Invoking pre-start scripts. (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:38:52.518#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-10084#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:51.941286] Invoking start command. (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:39:02.476#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13392#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:52.508593] > start (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:39:02.476#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13392#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:52.508631] > node node_modules/@sap/hdi-deploy/deploy.js --use-hdb --parameter com.sap.hana.di.table/try_fast_table_migration=true (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:39:02.476#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13392#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:52.679013] VCAP_SERVICES: (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:39:02.476#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13392#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:52.679718] { (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:39:02.476#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13392#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:52.679749] "hana": [ (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:39:02.476#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13392#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:52.679753] { (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:39:02.476#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13392#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:52.679757] "name": "EAM-db", (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:39:02.476#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13392#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:52.679760] "label": "hana", (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:39:02.476#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13392#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:52.679764] "plan": "hdi-shared", (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:39:02.476#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13392#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:52.679767] "credentials": { (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:39:02.476#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13392#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:52.679774] "schema": "477704A43EBE49F388724491B0FB6FF0", (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:39:02.476#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13392#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:52.679782] "database_id": "6c34b533-4ff7-4f52-9e34-3770efab830e", (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:39:02.476#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13392#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:52.679788] "user": "477704A43EBE49F388724491B0FB6FF0_6NWTM2MN6RNQAJU3UTHS30Z6W_RT", (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:39:02.476#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13392#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:52.679793] "hdi_user": "477704A43EBE49F388724491B0FB6FF0_6NWTM2MN6RNQAJU3UTHS30Z6W_DT" (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:39:02.476#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13392#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:52.679796] }, (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:39:02.476#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13392#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:52.679799] "tags": [ (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:39:02.476#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13392#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:52.679801] "hana", (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:39:02.476#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13392#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:52.679804] "database", (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:39:02.476#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13392#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:52.679808] "relational" (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:39:02.476#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13392#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:52.679813] ] (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:39:02.476#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13392#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:52.679816] } (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:39:02.476#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13392#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:52.679819] ] (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:39:02.476#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13392#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:52.679821] } (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:39:02.476#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13392#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:56.976312] @sap/hdi-deploy, version 5.7.0 (mode default), server version unknown (0.0.0.0), cloud version , node version 24.19.0, HDI version -1, container API version -1 (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:39:02.476#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13392#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:56.976459] Deployment started at 2026-10-06 12:38:56 (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:39:02.476#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13392#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:56.976978] Using hdb@2.30.1 for connection (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:39:02.476#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13392#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:56.977005] Detection of server version failed; root cause: HANA Database instance is stopped (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:39:02.476#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13392#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:56.977020] Detection of cloud version failed; root cause: HANA Database instance is stopped (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:39:02.476#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13392#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:56.977989] Error: Option parameter is not supported by the server; based on detected server version unknown (STDERR, APP/TASK/deploy)#
+#2026 10 06 12:39:02.476#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13392#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:56.978055] Detection of container API version failed; root cause: HANA Database instance is stopped (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:39:02.476#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13392#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:56.978078] Detection of HDI version failed; root cause: HANA Database instance is stopped (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:39:02.476#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13392#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:56.978083] Deployment ended at 2026-10-06 12:38:56 (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:39:02.476#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13392#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:56.978253] (4s 415ms) (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:39:02.476#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13392#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:56.996978] npm notice (STDERR, APP/TASK/deploy)#
+#2026 10 06 12:39:02.476#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13392#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:56.997020] npm notice New major version of npm available! 11.17.0 -> 12.2.0 (STDERR, APP/TASK/deploy)#
+#2026 10 06 12:39:02.476#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13392#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:56.997025] npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0 (STDERR, APP/TASK/deploy)#
+#2026 10 06 12:39:02.476#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13392#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:56.997029] npm notice To update run: npm install -g npm@12.2.0 (STDERR, APP/TASK/deploy)#
+#2026 10 06 12:39:02.476#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13392#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:56.997033] npm notice (STDERR, APP/TASK/deploy)#
+#2026 10 06 12:39:02.476#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13392#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:57.086628] Exit status 1 (STDOUT, APP/TASK/deploy)#
+#2026 10 06 12:39:02.476#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13392#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:57.702874] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 stopping instance 7dd27bc5-08a0-402d-b81a-dad14c3de85a (STDOUT, CELL)#
+#2026 10 06 12:39:02.476#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13392#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:57.702915] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 destroying container for instance 7dd27bc5-08a0-402d-b81a-dad14c3de85a (STDOUT, CELL)#
+#2026 10 06 12:39:02.476#Z#DEBUG#91ca7629-c182-11f1-ab57-eeee0a835edd.EAM-db-deployer#flowable-async-job-executor-thread-13392#
+[PollExecuteTaskStatusExecution] 9531f7fa-4c33-4611-b045-6530a56e307f [2026-10-06T12:38:59.987400] Cell d1cc041a-d5a1-41d6-b9f6-6cda736ce3f0 successfully destroyed container for instance 7dd27bc5-08a0-402d-b81a-dad14c3de85a (STDOUT, CELL)#

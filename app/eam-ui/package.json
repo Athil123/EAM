@@ -1,0 +1,14 @@
+{
+  "name": "eam-ui",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "ui5 serve --open index.html",
+    "build": "ui5 build --clean-dest && node zip-dist.mjs"
+  },
+  "devDependencies": {
+    "@ui5/cli": "^4.0.70",
+    "archiver": "^8.0.0",
+    "bestzip": "^4.0.3"
+  }
+}

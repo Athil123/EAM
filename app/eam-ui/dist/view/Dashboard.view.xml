@@ -1,0 +1,305 @@
+<mvc:View
+    controllerName="eam.ui.controller.Dashboard"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    displayBlock="true">
+
+    <Page
+        id="dashboardPage"
+        showHeader="false"
+        class="eamDashboardPage">
+
+        <content>
+
+            <VBox width="100%" class="eamDashboardContent">
+
+                <!-- Page header -->
+                <HBox
+                    width="100%"
+                    alignItems="End"
+                    justifyContent="SpaceBetween"
+                    wrap="Wrap"
+                    class="eamPageHeaderRow">
+                    <items>
+
+                        <VBox class="eamPageHeader">
+                            <items>
+                                <Text text="OVERVIEW" class="eamPageEyebrow"/>
+                                <Title text="Asset Management" level="H1" class="eamPageTitle"/>
+                                <Text
+                                    text="Monitor employees, assets and assignments from one place."
+                                    class="eamPageDescription"/>
+                            </items>
+                        </VBox>
+
+                        <Button
+                            text="Assign Asset"
+                            icon="sap-icon://add"
+                            type="Emphasized"
+                            press=".onAssignPress"
+                            class="eamPrimaryAction"/>
+
+                    </items>
+                </HBox>
+
+                <!-- KPI cards -->
+                <HBox renderType="Bare" class="eamKpiGrid">
+                    <items>
+
+                        <VBox class="eamKpiCard">
+                            <items>
+                                <HBox width="100%" justifyContent="SpaceBetween" alignItems="Center">
+                                    <items>
+                                        <Text text="Employees" class="eamKpiLabel"/>
+                                        <HBox alignItems="Center" justifyContent="Center" class="eamKpiIconContainer">
+                                            <items>
+                                                <core:Icon src="sap-icon://employee" size="1.125rem" class="eamKpiIcon"/>
+                                            </items>
+                                        </HBox>
+                                    </items>
+                                </HBox>
+                                <Title text="{dashboard>/employeeCount}" level="H2" class="eamKpiValue"/>
+                                <Text text="Total employees" class="eamKpiDescription"/>
+                            </items>
+                        </VBox>
+
+                        <VBox class="eamKpiCard">
+                            <items>
+                                <HBox width="100%" justifyContent="SpaceBetween" alignItems="Center">
+                                    <items>
+                                        <Text text="Assets" class="eamKpiLabel"/>
+                                        <HBox alignItems="Center" justifyContent="Center" class="eamKpiIconContainer">
+                                            <items>
+                                                <core:Icon src="sap-icon://laptop" size="1.125rem" class="eamKpiIcon"/>
+                                            </items>
+                                        </HBox>
+                                    </items>
+                                </HBox>
+                                <Title text="{dashboard>/assetCount}" level="H2" class="eamKpiValue"/>
+                                <Text text="Total assets" class="eamKpiDescription"/>
+                            </items>
+                        </VBox>
+
+                        <VBox class="eamKpiCard">
+                            <items>
+                                <HBox width="100%" justifyContent="SpaceBetween" alignItems="Center">
+                                    <items>
+                                        <Text text="Assigned" class="eamKpiLabel"/>
+                                        <HBox alignItems="Center" justifyContent="Center" class="eamKpiIconContainer">
+                                            <items>
+                                                <core:Icon src="sap-icon://employee-pane" size="1.125rem" class="eamKpiIcon"/>
+                                            </items>
+                                        </HBox>
+                                    </items>
+                                </HBox>
+                                <Title text="{dashboard>/assignedCount}" level="H2" class="eamKpiValue"/>
+                                <Text text="Currently assigned" class="eamKpiDescription"/>
+                            </items>
+                        </VBox>
+
+                        <VBox class="eamKpiCard">
+                            <items>
+                                <HBox width="100%" justifyContent="SpaceBetween" alignItems="Center">
+                                    <items>
+                                        <Text text="Available" class="eamKpiLabel"/>
+                                        <HBox alignItems="Center" justifyContent="Center" class="eamKpiIconContainer">
+                                            <items>
+                                                <core:Icon src="sap-icon://accept" size="1.125rem" class="eamKpiIcon"/>
+                                            </items>
+                                        </HBox>
+                                    </items>
+                                </HBox>
+                                <Title text="{dashboard>/availableCount}" level="H2" class="eamKpiValue"/>
+                                <Text text="Ready to assign" class="eamKpiDescription"/>
+                            </items>
+                        </VBox>
+
+                    </items>
+                </HBox>
+
+                <!-- Asset status -->
+                <VBox class="eamCard eamPanel">
+                    <items>
+
+                        <VBox class="eamPanelHeader">
+                            <items>
+                                <Title text="Asset Status" level="H2" class="eamSectionTitle"/>
+                                <Text text="Distribution of assets by current status." class="eamSectionDescription"/>
+                            </items>
+                        </VBox>
+
+                        <HBox renderType="Bare" class="eamStatusGrid">
+                            <items>
+
+                                <VBox class="eamStatusItem">
+                                    <items>
+                                        <HBox width="100%" justifyContent="SpaceBetween" alignItems="Center">
+                                            <items>
+                                                <HBox alignItems="Center">
+                                                    <items>
+                                                        <HBox class="eamStatusDot eamStatusAvailable"/>
+                                                        <Text text="Available" class="eamStatusLabel"/>
+                                                    </items>
+                                                </HBox>
+                                                <Title text="{dashboard>/availableCount}" level="H3" class="eamStatusValue"/>
+                                            </items>
+                                        </HBox>
+                                        <ProgressIndicator
+                                            percentValue="{dashboard>/availablePct}"
+                                            showValue="false"
+                                            height="8px"
+                                            class="eamBar eamBarAvailable"/>
+                                        <Text text="{dashboard>/availablePct}% of assets" class="eamStatusHint"/>
+                                    </items>
+                                </VBox>
+
+                                <VBox class="eamStatusItem">
+                                    <items>
+                                        <HBox width="100%" justifyContent="SpaceBetween" alignItems="Center">
+                                            <items>
+                                                <HBox alignItems="Center">
+                                                    <items>
+                                                        <HBox class="eamStatusDot eamStatusAssigned"/>
+                                                        <Text text="Assigned" class="eamStatusLabel"/>
+                                                    </items>
+                                                </HBox>
+                                                <Title text="{dashboard>/assignedCount}" level="H3" class="eamStatusValue"/>
+                                            </items>
+                                        </HBox>
+                                        <ProgressIndicator
+                                            percentValue="{dashboard>/assignedPct}"
+                                            showValue="false"
+                                            height="8px"
+                                            class="eamBar eamBarAssigned"/>
+                                        <Text text="{dashboard>/assignedPct}% of assets" class="eamStatusHint"/>
+                                    </items>
+                                </VBox>
+
+                                <VBox class="eamStatusItem">
+                                    <items>
+                                        <HBox width="100%" justifyContent="SpaceBetween" alignItems="Center">
+                                            <items>
+                                                <HBox alignItems="Center">
+                                                    <items>
+                                                        <HBox class="eamStatusDot eamStatusRepair"/>
+                                                        <Text text="Repair" class="eamStatusLabel"/>
+                                                    </items>
+                                                </HBox>
+                                                <Title text="{dashboard>/repairCount}" level="H3" class="eamStatusValue"/>
+                                            </items>
+                                        </HBox>
+                                        <ProgressIndicator
+                                            percentValue="{dashboard>/repairPct}"
+                                            showValue="false"
+                                            height="8px"
+                                            class="eamBar eamBarRepair"/>
+                                        <Text text="{dashboard>/repairPct}% of assets" class="eamStatusHint"/>
+                                    </items>
+                                </VBox>
+
+                                <VBox class="eamStatusItem">
+                                    <items>
+                                        <HBox width="100%" justifyContent="SpaceBetween" alignItems="Center">
+                                            <items>
+                                                <HBox alignItems="Center">
+                                                    <items>
+                                                        <HBox class="eamStatusDot eamStatusRetired"/>
+                                                        <Text text="Retired" class="eamStatusLabel"/>
+                                                    </items>
+                                                </HBox>
+                                                <Title text="{dashboard>/retiredCount}" level="H3" class="eamStatusValue"/>
+                                            </items>
+                                        </HBox>
+                                        <ProgressIndicator
+                                            percentValue="{dashboard>/retiredPct}"
+                                            showValue="false"
+                                            height="8px"
+                                            class="eamBar eamBarRetired"/>
+                                        <Text text="{dashboard>/retiredPct}% of assets" class="eamStatusHint"/>
+                                    </items>
+                                </VBox>
+
+                            </items>
+                        </HBox>
+
+                    </items>
+                </VBox>
+
+                <!-- Recent assignments -->
+                <VBox class="eamCard eamPanel">
+                    <items>
+
+                        <HBox
+                            width="100%"
+                            alignItems="Center"
+                            justifyContent="SpaceBetween"
+                            class="eamPanelHeader">
+                            <items>
+                                <VBox>
+                                    <items>
+                                        <Title text="Recent Assignments" level="H2" class="eamSectionTitle"/>
+                                        <Text text="The latest asset assignments and returns." class="eamSectionDescription"/>
+                                    </items>
+                                </VBox>
+                                <Button
+                                    text="View all"
+                                    type="Transparent"
+                                    press=".onAssignmentsPress"/>
+                            </items>
+                        </HBox>
+
+                        <Table
+                            class="eamTable"
+                            noDataText="No assignments yet"
+                            items="{
+                                path: '/AssetAssignments',
+                                sorter: { path: 'AssignedDate', descending: true },
+                                length: 5
+                            }">
+
+                            <columns>
+                                <Column><Text text="Asset"/></Column>
+                                <Column minScreenWidth="Tablet" demandPopin="true"><Text text="Employee"/></Column>
+                                <Column minScreenWidth="Tablet" demandPopin="true"><Text text="Assigned"/></Column>
+                                <Column minScreenWidth="Desktop" demandPopin="true"><Text text="Returned"/></Column>
+                                <Column><Text text="Status"/></Column>
+                            </columns>
+
+                            <items>
+                                <ColumnListItem>
+                                    <cells>
+                                        <Text text="{Asset/AssetName}" class="eamCellPrimary"/>
+                                        <Text text="{Employee/FirstName} {Employee/LastName}"/>
+                                        <Text text="{
+                                            path: 'AssignedDate',
+                                            type: 'sap.ui.model.odata.type.Date',
+                                            formatOptions: { style: 'medium' }
+                                        }"/>
+                                        <Text text="{
+                                            path: 'ReturnDate',
+                                            type: 'sap.ui.model.odata.type.Date',
+                                            formatOptions: { style: 'medium' }
+                                        }"/>
+                                        <ObjectStatus
+                                            text="{Status}"
+                                            state="{
+                                                path: 'Status',
+                                                formatter: '.formatter.assignmentState'
+                                            }"/>
+                                    </cells>
+                                </ColumnListItem>
+                            </items>
+
+                        </Table>
+
+                    </items>
+                </VBox>
+
+            </VBox>
+
+        </content>
+
+    </Page>
+
+</mvc:View>

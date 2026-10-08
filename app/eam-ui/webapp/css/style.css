@@ -1,0 +1,532 @@
+/* =========================================================
+   EAM — style.css
+   Navy #142B4A · Red #D20F19 · Light red #FBE3E4
+   Background #F6F7F9 · Border #E5E8ED
+   ========================================================= */
+
+/* ---------- Shell ---------- */
+.eamApp,
+.eamToolPage {
+    background: #f6f7f9;
+}
+
+.sapTntToolHeader.eamToolHeader {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e8ed;
+    box-shadow: none;
+}
+
+.eamBrand {
+    margin-left: 4px;
+}
+
+.eamBrandMark {
+    padding: 5px 9px;
+    border-radius: 7px;
+    background: #d20f19;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.eamBrandName {
+    margin-left: 12px;
+    color: #142b4a;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.sapTntSideNavigation.eamSideNav {
+    background: #ffffff;
+    border-right: 1px solid #e5e8ed;
+    padding-top: 8px;
+}
+
+.eamSideNav .sapTntNLISelected {
+    background: #fbe3e4 !important;
+}
+
+.eamSideNav .sapTntNLISelected,
+.eamSideNav .sapTntNLISelected .sapUiIcon,
+.eamSideNav .sapTntNLISelected span {
+    color: #d20f19 !important;
+    font-weight: 600;
+}
+
+/* ---------- Page layout ---------- */
+.eamDashboardPage {
+    background: #f6f7f9;
+}
+
+.eamDashboardContent {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 36px 42px 56px 42px;
+}
+
+.eamPageHeaderRow {
+    margin-bottom: 28px;
+    gap: 16px;
+}
+
+.eamPageHeaderRow .eamPageHeader {
+    margin-bottom: 0;
+}
+
+.eamPageHeader {
+    margin-bottom: 32px;
+}
+
+.eamPageEyebrow {
+    color: #d20f19;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+
+.eamPageTitle {
+    color: #142b4a;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 5px;
+}
+
+.eamPageDescription {
+    color: #687385;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-top: 6px;
+}
+
+.eamPrimaryAction,
+.eamActionButton {
+    min-width: 160px;
+    height: 44px;
+}
+
+/* ---------- Sections (used by detail pages) ---------- */
+.eamSection {
+    margin-top: 38px;
+}
+
+.eamSectionTitle {
+    color: #142b4a;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.eamSectionDescription {
+    color: #7a8492;
+    font-size: 14px;
+    margin-top: 4px;
+    margin-bottom: 18px;
+}
+
+/* ---------- Cards & panels ---------- */
+.eamCard {
+    width: 100%;
+    box-sizing: border-box;
+    background: #ffffff;
+    border: 1px solid #e5e8ed;
+    border-radius: 14px;
+    box-shadow: 0 3px 12px rgba(20, 43, 74, 0.05);
+    overflow: hidden;
+}
+
+.eamPanel {
+    margin-top: 24px;
+}
+
+.eamPanelHeader {
+    padding: 22px 24px 20px 24px;
+    border-bottom: 1px solid #e5e8ed;
+}
+
+.eamPanelHeader .eamSectionDescription {
+    margin-bottom: 0;
+}
+
+/* ---------- KPI cards ---------- */
+.sapMFlexBox.eamKpiGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.eamKpiCard {
+    box-sizing: border-box;
+    min-width: 0;
+    padding: 22px 24px;
+    background: #ffffff;
+    border: 1px solid #e5e8ed;
+    border-radius: 14px;
+    box-shadow: 0 3px 12px rgba(20, 43, 74, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.eamKpiCard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 20px rgba(20, 43, 74, 0.09);
+}
+
+.eamKpiLabel {
+    color: #6b7280;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.eamKpiValue {
+    color: #142b4a;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1;
+    margin-top: 16px;
+}
+
+.eamKpiDescription {
+    color: #9aa2ad;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.eamKpiIconContainer {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #fbe3e4;
+}
+
+.eamKpiIcon {
+    color: #d20f19;
+}
+
+/* ---------- Asset status panel ---------- */
+.sapMFlexBox.eamStatusGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    width: 100%;
+}
+
+.eamStatusItem {
+    box-sizing: border-box;
+    min-width: 0;
+    padding: 22px 24px 24px 24px;
+    border-right: 1px solid #eef0f3;
+}
+
+.eamStatusItem:last-child {
+    border-right: none;
+}
+
+.eamStatusDot {
+    width: 10px;
+    height: 10px;
+    margin-right: 8px;
+    border-radius: 50%;
+}
+
+.eamStatusAvailable { background: #2e7d5b; }
+.eamStatusAssigned  { background: #142b4a; }
+.eamStatusRepair    { background: #c77700; }
+.eamStatusRetired   { background: #9aa2ad; }
+
+.eamStatusLabel {
+    color: #687385;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.eamStatusValue {
+    color: #142b4a;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.eamStatusHint {
+    display: block;
+    margin-top: 10px;
+    color: #9aa2ad;
+    font-size: 12px;
+}
+
+.eamBar {
+    margin-top: 16px;
+}
+
+.eamBar.sapMPI {
+    background: #eef0f3;
+    border-radius: 999px;
+}
+
+.eamBar .sapMPIBar {
+    border-radius: 999px;
+}
+
+.eamBarAvailable .sapMPIBar { background: #2e7d5b; }
+.eamBarAssigned  .sapMPIBar { background: #142b4a; }
+.eamBarRepair    .sapMPIBar { background: #c77700; }
+.eamBarRetired   .sapMPIBar { background: #9aa2ad; }
+
+/* ---------- Toolbars & filters ---------- */
+.eamToolbarRow {
+    padding: 18px 20px;
+    gap: 12px;
+    border-bottom: 1px solid #e5e8ed;
+}
+
+.eamToolbarCount {
+    color: #9aa2ad;
+    font-size: 13px;
+}
+
+.eamFilterGroup {
+    gap: 12px;
+}
+
+.eamStatusSelect {
+    width: 170px;
+}
+
+.eamHeaderActions {
+    gap: 14px;
+}
+
+/* ---------- Tables ---------- */
+.eamTable .sapMListTblHeaderCell {
+    background: #f9fafb;
+    color: #687385;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+}
+
+.eamTable .sapMListTblCell {
+    color: #3a4658;
+    font-size: 14px;
+}
+
+.eamCellPrimary {
+    color: #142b4a;
+    font-weight: 600;
+}
+
+/* ---------- Detail pages ---------- */
+.eamBackButton {
+    margin-bottom: 16px;
+}
+
+.eamProfileRow {
+    padding: 28px;
+    gap: 20px;
+}
+
+.eamProfileText {
+    min-width: 0;
+}
+
+.eamProfileName {
+    color: #142b4a;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.eamProfileMeta {
+    color: #687385;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.eamAvatar.sapFAvatar,
+.eamAvatar.sapMAvatar {
+    background: #fbe3e4 !important;
+    color: #d20f19 !important;
+    font-weight: 700;
+}
+
+.eamFieldGrid {
+    padding: 22px 28px 26px 28px;
+    gap: 44px;
+    border-top: 1px solid #e5e8ed;
+}
+
+.eamField {
+    min-width: 160px;
+}
+
+.eamFieldLabel {
+    color: #9aa2ad;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+}
+
+.eamFieldValue {
+    color: #142b4a;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 6px;
+}
+
+/* ---------- Assign dialog ---------- */
+.eamDialogContent .sapMLabel {
+    margin-top: 14px;
+    margin-bottom: 6px;
+}
+
+.eamDialogContent .sapMLabel:first-child {
+    margin-top: 0;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+
+    .eamDashboardContent {
+        padding: 28px 24px 40px 24px;
+    }
+
+    .eamStatusItem {
+        border-right: none;
+        border-bottom: 1px solid #eef0f3;
+    }
+
+    .eamStatusItem:last-child {
+        border-bottom: none;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .eamDashboardContent {
+        padding: 24px 16px 32px 16px;
+    }
+
+    .eamPageTitle {
+        font-size: 28px;
+    }
+
+    .eamPageDescription {
+        font-size: 14px;
+    }
+
+    .eamPrimaryAction,
+    .eamActionButton {
+        width: 100%;
+    }
+
+    .eamKpiValue {
+        font-size: 30px;
+    }
+
+    .eamBrandName {
+        font-size: 15px;
+    }
+
+    .eamSearchField,
+    .eamStatusSelect {
+        width: 100% !important;
+    }
+
+    .eamProfileRow {
+        padding: 20px;
+    }
+
+    .eamProfileName {
+        font-size: 24px;
+    }
+
+    .eamFieldGrid {
+        padding: 18px 20px 22px 20px;
+        gap: 24px;
+    }
+}
+
+/* ---------- Phone pass ---------- */
+@media (max-width: 600px) {
+
+    /* Page header: title above full-width action */
+    .sapMFlexBox.eamPageHeaderRow {
+        flex-direction: column;
+        align-items: stretch;
+        margin-bottom: 20px;
+    }
+
+    .eamPageHeaderRow .eamPageHeader {
+        margin-bottom: 16px;
+    }
+
+    /* Toolbar: search and filter stacked, full width */
+    .sapMFlexBox.eamToolbarRow {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 14px 16px;
+    }
+
+    .sapMFlexBox.eamFilterGroup {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+    }
+
+    .eamToolbarCount {
+        margin-top: 2px;
+    }
+
+    /* Tables: tighter text for popped-in rows */
+    .eamTable .sapMListTblCell,
+    .eamTable .sapMListTblSubCntRow {
+        font-size: 13px;
+    }
+
+    .eamPanelHeader {
+        padding: 18px 16px 16px 16px;
+    }
+
+    .eamStatusItem {
+        padding: 18px 16px 20px 16px;
+    }
+
+    .eamKpiCard {
+        padding: 18px 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .eamBrandName {
+        display: none;
+    }
+}
+
+/* ---------- Row actions ---------- */
+.eamRowActions {
+    gap: 2px;
+}
+
+.eamDeleteButton .sapMBtnIcon {
+    color: #d20f19;
+}
+
+/* ---------- Reports ---------- */
+.eamBarCell {
+    gap: 12px;
+}
+
+.eamBarCount {
+    min-width: 24px;
+    color: #142b4a;
+    font-weight: 600;
+}
+
+.eamBarCell .eamBar {
+    margin-top: 0;
+}

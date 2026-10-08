@@ -1,0 +1,127 @@
+<mvc:View
+    controllerName="eam.ui.controller.Employees"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    displayBlock="true">
+
+    <Page
+        id="employeesPage"
+        showHeader="false"
+        class="eamDashboardPage">
+
+        <content>
+
+            <VBox width="100%" class="eamDashboardContent">
+
+                <HBox
+                    width="100%"
+                    alignItems="End"
+                    justifyContent="SpaceBetween"
+                    wrap="Wrap"
+                    class="eamPageHeaderRow">
+                    <items>
+
+                        <VBox class="eamPageHeader">
+                            <items>
+                                <Text text="PEOPLE" class="eamPageEyebrow"/>
+                                <Title text="Employees" level="H1" class="eamPageTitle"/>
+                                <Text
+                                    text="Manage employees and open their asset history."
+                                    class="eamPageDescription"/>
+                            </items>
+                        </VBox>
+
+                        <Button
+                            text="Add Employee"
+                            icon="sap-icon://add"
+                            type="Emphasized"
+                            press=".onAddPress"
+                            class="eamPrimaryAction"/>
+
+                    </items>
+                </HBox>
+
+                <VBox class="eamCard">
+                    <items>
+
+                        <HBox
+                            width="100%"
+                            alignItems="Center"
+                            justifyContent="SpaceBetween"
+                            wrap="Wrap"
+                            class="eamToolbarRow">
+                            <items>
+                                <SearchField
+                                    placeholder="Search employees"
+                                    width="320px"
+                                    search=".onSearch"
+                                    class="eamSearchField"/>
+                                <Text text="{view>/count} employees" class="eamToolbarCount"/>
+                            </items>
+                        </HBox>
+
+                        <Table
+                            id="employeesTable"
+                            class="eamTable"
+                            growing="true"
+                            growingThreshold="20"
+                            updateFinished=".onUpdateFinished"
+                            noDataText="No employees found"
+                            items="{
+                                path: '/Employees',
+                                sorter: { path: 'LastName' },
+                                parameters: { $count: true }
+                            }">
+
+                            <columns>
+                                <Column>
+                                    <Text text="Employee"/>
+                                </Column>
+                                <Column minScreenWidth="Tablet" demandPopin="true">
+                                    <Text text="Department"/>
+                                </Column>
+                                <Column minScreenWidth="Tablet" demandPopin="true">
+                                    <Text text="Email"/>
+                                </Column>
+                                <Column width="6.5rem" hAlign="End">
+                                    <Text text=""/>
+                                </Column>
+                            </columns>
+
+                            <items>
+                                <ColumnListItem type="Navigation" press=".onItemPress">
+                                    <cells>
+                                        <Text text="{FirstName} {LastName}" class="eamCellPrimary"/>
+                                        <Text text="{Department}"/>
+                                        <Text text="{Email}"/>
+                                        <HBox justifyContent="End" class="eamRowActions">
+                                            <items>
+                                                <Button
+                                                    icon="sap-icon://edit"
+                                                    type="Transparent"
+                                                    tooltip="Edit employee"
+                                                    press=".onEditPress"/>
+                                                <Button
+                                                    icon="sap-icon://delete"
+                                                    type="Transparent"
+                                                    tooltip="Delete employee"
+                                                    press=".onDeletePress"
+                                                    class="eamDeleteButton"/>
+                                            </items>
+                                        </HBox>
+                                    </cells>
+                                </ColumnListItem>
+                            </items>
+
+                        </Table>
+
+                    </items>
+                </VBox>
+
+            </VBox>
+
+        </content>
+
+    </Page>
+
+</mvc:View>

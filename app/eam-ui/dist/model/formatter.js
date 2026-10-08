@@ -1,0 +1,2 @@
+sap.ui.define([],function(){"use strict";return{assetState:function(t){switch(t){case"AVAILABLE":return"Success";case"ASSIGNED":return"Information";case"REPAIR":return"Warning";default:return"None"}},assignmentState:function(t){switch(t){case"ASSIGNED":return"Information";case"RETURNED":return"Success";default:return"None"}},initials:function(t,n){return((t||"").charAt(0)+(n||"").charAt(0)).toUpperCase()},percentOfMax:function(t,n){return n?Math.round((t||0)*100/n):0}}});
+//# sourceMappingURL=formatter.js.map

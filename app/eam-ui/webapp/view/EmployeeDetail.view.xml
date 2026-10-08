@@ -1,0 +1,154 @@
+<mvc:View
+    controllerName="eam.ui.controller.EmployeeDetail"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    displayBlock="true">
+
+    <Page
+        id="employeeDetailPage"
+        showHeader="false"
+        class="eamDashboardPage">
+
+        <content>
+
+            <VBox width="100%" class="eamDashboardContent">
+
+                <Button
+                    text="Employees"
+                    icon="sap-icon://nav-back"
+                    type="Transparent"
+                    press=".onNavBack"
+                    class="eamBackButton"/>
+
+                <VBox class="eamCard">
+                    <items>
+                        <HBox alignItems="Center" wrap="Wrap" class="eamProfileRow">
+                            <items>
+
+                                <Avatar
+                                    initials="{
+                                        parts: ['FirstName', 'LastName'],
+                                        formatter: '.formatter.initials'
+                                    }"
+                                    displaySize="L"
+                                    class="eamAvatar"/>
+
+                                <VBox class="eamProfileText">
+                                    <items>
+                                        <Title
+                                            text="{FirstName} {LastName}"
+                                            level="H1"
+                                            class="eamProfileName"/>
+                                        <Text text="{Department}" class="eamProfileMeta"/>
+                                        <Text text="{Email}" class="eamProfileMeta"/>
+                                    </items>
+                                </VBox>
+
+                            </items>
+                        </HBox>
+                    </items>
+                </VBox>
+
+                <VBox class="eamSection">
+                    <items>
+                        <Title text="Currently Assigned Assets" level="H2" class="eamSectionTitle"/>
+                        <Text text="Assets this employee currently holds." class="eamSectionDescription"/>
+
+                        <VBox class="eamCard">
+                            <items>
+                                <Table
+                                    class="eamTable"
+                                    noDataText="No assets currently assigned"
+                                    items="{
+                                        path: 'assignments',
+                                        filters: [{ path: 'Status', operator: 'EQ', value1: 'ASSIGNED' }],
+                                        sorter: { path: 'AssignedDate', descending: true }
+                                    }">
+
+                                    <columns>
+                                        <Column><Text text="Asset"/></Column>
+                                        <Column minScreenWidth="Tablet" demandPopin="true"><Text text="Type"/></Column>
+                                        <Column minScreenWidth="Desktop" demandPopin="true"><Text text="Serial Number"/></Column>
+                                        <Column minScreenWidth="Tablet" demandPopin="true"><Text text="Assigned"/></Column>
+                                    </columns>
+
+                                    <items>
+                                        <ColumnListItem>
+                                            <cells>
+                                                <Text text="{Asset/AssetName}" class="eamCellPrimary"/>
+                                                <Text text="{Asset/AssetType}"/>
+                                                <Text text="{Asset/SerialNumber}"/>
+                                                <Text text="{
+                                                    path: 'AssignedDate',
+                                                    type: 'sap.ui.model.odata.type.Date',
+                                                    formatOptions: { style: 'medium' }
+                                                }"/>
+                                            </cells>
+                                        </ColumnListItem>
+                                    </items>
+
+                                </Table>
+                            </items>
+                        </VBox>
+                    </items>
+                </VBox>
+
+                <VBox class="eamSection">
+                    <items>
+                        <Title text="Assignment History" level="H2" class="eamSectionTitle"/>
+                        <Text text="All assignments and returns for this employee." class="eamSectionDescription"/>
+
+                        <VBox class="eamCard">
+                            <items>
+                                <Table
+                                    class="eamTable"
+                                    noDataText="No assignment history"
+                                    items="{
+                                        path: 'assignments',
+                                        sorter: { path: 'AssignedDate', descending: true }
+                                    }">
+
+                                    <columns>
+                                        <Column><Text text="Asset"/></Column>
+                                        <Column minScreenWidth="Tablet" demandPopin="true"><Text text="Assigned"/></Column>
+                                        <Column minScreenWidth="Tablet" demandPopin="true"><Text text="Returned"/></Column>
+                                        <Column><Text text="Status"/></Column>
+                                    </columns>
+
+                                    <items>
+                                        <ColumnListItem>
+                                            <cells>
+                                                <Text text="{Asset/AssetName}" class="eamCellPrimary"/>
+                                                <Text text="{
+                                                    path: 'AssignedDate',
+                                                    type: 'sap.ui.model.odata.type.Date',
+                                                    formatOptions: { style: 'medium' }
+                                                }"/>
+                                                <Text text="{
+                                                    path: 'ReturnDate',
+                                                    type: 'sap.ui.model.odata.type.Date',
+                                                    formatOptions: { style: 'medium' }
+                                                }"/>
+                                                <ObjectStatus
+                                                    text="{Status}"
+                                                    state="{
+                                                        path: 'Status',
+                                                        formatter: '.formatter.assignmentState'
+                                                    }"/>
+                                            </cells>
+                                        </ColumnListItem>
+                                    </items>
+
+                                </Table>
+                            </items>
+                        </VBox>
+                    </items>
+                </VBox>
+
+            </VBox>
+
+        </content>
+
+    </Page>
+
+</mvc:View>

@@ -1,0 +1,70 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+
+    <Dialog
+        title="Assign Asset"
+        contentWidth="420px"
+        stretchOnPhone="true"
+        class="eamDialog">
+
+        <content>
+            <VBox class="sapUiSmallMargin eamDialogContent">
+                <items>
+
+                    <Label text="Employee" required="true"/>
+                    <Select
+                        width="100%"
+                        forceSelection="false"
+                        selectedKey="{assign>/employeeId}"
+                        valueState="{assign>/state/employeeId}"
+                        valueStateText="Select an employee"
+                        change=".onFieldChange"
+                        items="{
+                            path: '/Employees',
+                            sorter: { path: 'LastName' }
+                        }">
+                        <core:Item key="{ID}" text="{FirstName} {LastName}"/>
+                    </Select>
+
+                    <Label text="Asset" required="true"/>
+                    <Select
+                        width="100%"
+                        forceSelection="false"
+                        enabled="{= !${assign>/assetLocked} }"
+                        selectedKey="{assign>/assetId}"
+                        valueState="{assign>/state/assetId}"
+                        valueStateText="Select an available asset"
+                        change=".onFieldChange"
+                        items="{
+                            path: '/Assets',
+                            filters: [{ path: 'Status', operator: 'EQ', value1: 'AVAILABLE' }],
+                            sorter: { path: 'AssetName' }
+                        }">
+                        <core:Item key="{ID}" text="{AssetName} ({SerialNumber})"/>
+                    </Select>
+
+                    <Label text="Assigned date" required="true"/>
+                    <DatePicker
+                        width="100%"
+                        value="{assign>/assignedDate}"
+                        valueFormat="yyyy-MM-dd"
+                        displayFormat="medium"
+                        valueState="{assign>/state/assignedDate}"
+                        valueStateText="Enter a valid date"
+                        change=".onFieldChange"/>
+
+                </items>
+            </VBox>
+        </content>
+
+        <beginButton>
+            <Button text="Assign" type="Emphasized" press=".onConfirm"/>
+        </beginButton>
+        <endButton>
+            <Button text="Cancel" press=".onCancel"/>
+        </endButton>
+
+    </Dialog>
+
+</core:FragmentDefinition>

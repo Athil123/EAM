@@ -1,0 +1,205 @@
+<mvc:View
+    controllerName="eam.ui.controller.AssetDetail"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    displayBlock="true">
+
+    <Page
+        id="assetDetailPage"
+        showHeader="false"
+        class="eamDashboardPage">
+
+        <content>
+
+            <VBox width="100%" class="eamDashboardContent">
+
+                <Button
+                    text="Assets"
+                    icon="sap-icon://nav-back"
+                    type="Transparent"
+                    press=".onNavBack"
+                    class="eamBackButton"/>
+
+                <VBox class="eamCard">
+                    <items>
+
+                        <HBox
+                            width="100%"
+                            alignItems="Center"
+                            justifyContent="SpaceBetween"
+                            wrap="Wrap"
+                            class="eamProfileRow">
+                            <items>
+
+                                <VBox>
+                                    <items>
+                                        <Title text="{AssetName}" level="H1" class="eamProfileName"/>
+                                        <Text text="{AssetType}" class="eamProfileMeta"/>
+                                    </items>
+                                </VBox>
+
+                                <HBox alignItems="Center" class="eamHeaderActions">
+                                    <items>
+                                        <ObjectStatus
+                                            text="{Status}"
+                                            state="{
+                                                path: 'Status',
+                                                formatter: '.formatter.assetState'
+                                            }"/>
+                                        <Button
+                                            text="Assign"
+                                            icon="sap-icon://add"
+                                            type="Emphasized"
+                                            visible="{= ${Status} === 'AVAILABLE' }"
+                                            press=".onAssignPress"/>
+                                    </items>
+                                </HBox>
+
+                            </items>
+                        </HBox>
+
+                        <HBox wrap="Wrap" class="eamFieldGrid">
+                            <items>
+
+                                <VBox class="eamField">
+                                    <items>
+                                        <Text text="Serial Number" class="eamFieldLabel"/>
+                                        <Text text="{SerialNumber}" class="eamFieldValue"/>
+                                    </items>
+                                </VBox>
+
+                                <VBox class="eamField">
+                                    <items>
+                                        <Text text="Purchase Date" class="eamFieldLabel"/>
+                                        <Text text="{
+                                            path: 'PurchaseDate',
+                                            type: 'sap.ui.model.odata.type.Date',
+                                            formatOptions: { style: 'medium' }
+                                        }" class="eamFieldValue"/>
+                                    </items>
+                                </VBox>
+
+                                <VBox class="eamField">
+                                    <items>
+                                        <Text text="Price" class="eamFieldLabel"/>
+                                        <Text text="{
+                                            path: 'Price',
+                                            type: 'sap.ui.model.odata.type.Decimal',
+                                            constraints: { precision: 10, scale: 2 },
+                                            formatOptions: { minFractionDigits: 2, maxFractionDigits: 2 }
+                                        }" class="eamFieldValue"/>
+                                    </items>
+                                </VBox>
+
+                            </items>
+                        </HBox>
+
+                    </items>
+                </VBox>
+
+                <VBox class="eamSection">
+                    <items>
+                        <Title text="Current Assignment" level="H2" class="eamSectionTitle"/>
+                        <Text text="Who currently holds this asset." class="eamSectionDescription"/>
+
+                        <VBox class="eamCard">
+                            <items>
+                                <Table
+                                    class="eamTable"
+                                    noDataText="Not currently assigned"
+                                    items="{
+                                        path: 'assignments',
+                                        filters: [{ path: 'Status', operator: 'EQ', value1: 'ASSIGNED' }]
+                                    }">
+
+                                    <columns>
+                                        <Column><Text text="Employee"/></Column>
+                                        <Column minScreenWidth="Tablet" demandPopin="true"><Text text="Department"/></Column>
+                                        <Column minScreenWidth="Tablet" demandPopin="true"><Text text="Assigned"/></Column>
+                                        <Column hAlign="End"><Text text=""/></Column>
+                                    </columns>
+
+                                    <items>
+                                        <ColumnListItem>
+                                            <cells>
+                                                <Text text="{Employee/FirstName} {Employee/LastName}" class="eamCellPrimary"/>
+                                                <Text text="{Employee/Department}"/>
+                                                <Text text="{
+                                                    path: 'AssignedDate',
+                                                    type: 'sap.ui.model.odata.type.Date',
+                                                    formatOptions: { style: 'medium' }
+                                                }"/>
+                                                <Button
+                                                    text="Return"
+                                                    icon="sap-icon://undo"
+                                                    type="Transparent"
+                                                    press=".onReturnPress"/>
+                                            </cells>
+                                        </ColumnListItem>
+                                    </items>
+
+                                </Table>
+                            </items>
+                        </VBox>
+                    </items>
+                </VBox>
+
+                <VBox class="eamSection">
+                    <items>
+                        <Title text="Assignment History" level="H2" class="eamSectionTitle"/>
+                        <Text text="Every assignment and return for this asset." class="eamSectionDescription"/>
+
+                        <VBox class="eamCard">
+                            <items>
+                                <Table
+                                    class="eamTable"
+                                    noDataText="No assignment history"
+                                    items="{
+                                        path: 'assignments',
+                                        sorter: { path: 'AssignedDate', descending: true }
+                                    }">
+
+                                    <columns>
+                                        <Column><Text text="Employee"/></Column>
+                                        <Column minScreenWidth="Tablet" demandPopin="true"><Text text="Assigned"/></Column>
+                                        <Column minScreenWidth="Tablet" demandPopin="true"><Text text="Returned"/></Column>
+                                        <Column><Text text="Status"/></Column>
+                                    </columns>
+
+                                    <items>
+                                        <ColumnListItem>
+                                            <cells>
+                                                <Text text="{Employee/FirstName} {Employee/LastName}" class="eamCellPrimary"/>
+                                                <Text text="{
+                                                    path: 'AssignedDate',
+                                                    type: 'sap.ui.model.odata.type.Date',
+                                                    formatOptions: { style: 'medium' }
+                                                }"/>
+                                                <Text text="{
+                                                    path: 'ReturnDate',
+                                                    type: 'sap.ui.model.odata.type.Date',
+                                                    formatOptions: { style: 'medium' }
+                                                }"/>
+                                                <ObjectStatus
+                                                    text="{Status}"
+                                                    state="{
+                                                        path: 'Status',
+                                                        formatter: '.formatter.assignmentState'
+                                                    }"/>
+                                            </cells>
+                                        </ColumnListItem>
+                                    </items>
+
+                                </Table>
+                            </items>
+                        </VBox>
+                    </items>
+                </VBox>
+
+            </VBox>
+
+        </content>
+
+    </Page>
+
+</mvc:View>

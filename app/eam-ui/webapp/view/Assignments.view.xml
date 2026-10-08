@@ -1,0 +1,143 @@
+<mvc:View
+    controllerName="eam.ui.controller.Assignments"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    displayBlock="true">
+
+    <Page
+        id="assignmentsPage"
+        showHeader="false"
+        class="eamDashboardPage">
+
+        <content>
+
+            <VBox width="100%" class="eamDashboardContent">
+
+                <HBox
+                    width="100%"
+                    alignItems="Start"
+                    justifyContent="SpaceBetween"
+                    wrap="Wrap"
+                    class="eamPageHeaderRow">
+                    <items>
+                        <VBox class="eamPageHeader">
+                            <Text text="OPERATIONS" class="eamPageEyebrow"/>
+                            <Title text="Assignments" level="H1" class="eamPageTitle"/>
+                            <Text text="Assign assets to employees and record returns." class="eamPageDescription"/>
+                        </VBox>
+
+                        <Button
+                            text="Assign Asset"
+                            icon="sap-icon://add"
+                            type="Emphasized"
+                            press=".onAssignPress"
+                            class="eamActionButton"/>
+                    </items>
+                </HBox>
+
+                <VBox class="eamCard">
+                    <items>
+
+                        <HBox
+                            width="100%"
+                            alignItems="Center"
+                            justifyContent="SpaceBetween"
+                            wrap="Wrap"
+                            class="eamToolbarRow">
+                            <items>
+
+                                <HBox alignItems="Center" wrap="Wrap" class="eamFilterGroup">
+                                    <items>
+                                        <SearchField
+                                            placeholder="Search by asset or employee"
+                                            width="320px"
+                                            search=".onSearch"
+                                            class="eamSearchField"/>
+                                        <Select
+                                            selectedKey="ALL"
+                                            change=".onStatusChange"
+                                            class="eamStatusSelect">
+                                            <core:Item key="ALL" text="All statuses"/>
+                                            <core:Item key="ASSIGNED" text="Assigned"/>
+                                            <core:Item key="RETURNED" text="Returned"/>
+                                        </Select>
+                                        <Select selectedKey="DATE_DESC" change=".onSortChange" class="eamStatusSelect">
+                                            <core:Item key="DATE_DESC" text="Sort: Newest first"/>
+                                            <core:Item key="DATE_ASC" text="Sort: Oldest first"/>
+                                            <core:Item key="ASSET_ASC" text="Sort: Asset A–Z"/>
+                                            <core:Item key="EMP_ASC" text="Sort: Employee A–Z"/>
+                                        </Select>
+                                    </items>
+                                </HBox>
+
+                                <Text text="{view>/count} assignments" class="eamToolbarCount"/>
+
+                            </items>
+                        </HBox>
+
+                        <Table
+                            id="assignmentsTable"
+                            class="eamTable"
+                            growing="true"
+                            growingThreshold="20"
+                            updateFinished=".onUpdateFinished"
+                            noDataText="No assignments found"
+                            items="{
+                                path: '/AssetAssignments',
+                                sorter: { path: 'AssignedDate', descending: true },
+                                parameters: { $count: true }
+                            }">
+
+                            <columns>
+                                <Column><Text text="Asset"/></Column>
+                                <Column minScreenWidth="Tablet" demandPopin="true"><Text text="Employee"/></Column>
+                                <Column minScreenWidth="Tablet" demandPopin="true"><Text text="Assigned"/></Column>
+                                <Column minScreenWidth="Desktop" demandPopin="true"><Text text="Returned"/></Column>
+                                <Column><Text text="Status"/></Column>
+                                <Column hAlign="End"><Text text=""/></Column>
+                            </columns>
+
+                            <items>
+                                <ColumnListItem>
+                                    <cells>
+                                        <Text text="{Asset/AssetName}" class="eamCellPrimary"/>
+                                        <Text text="{Employee/FirstName} {Employee/LastName}"/>
+                                        <Text text="{
+                                            path: 'AssignedDate',
+                                            type: 'sap.ui.model.odata.type.Date',
+                                            formatOptions: { style: 'medium' }
+                                        }"/>
+                                        <Text text="{
+                                            path: 'ReturnDate',
+                                            type: 'sap.ui.model.odata.type.Date',
+                                            formatOptions: { style: 'medium' }
+                                        }"/>
+                                        <ObjectStatus
+                                            text="{Status}"
+                                            state="{
+                                                path: 'Status',
+                                                formatter: '.formatter.assignmentState'
+                                            }"/>
+                                        <Button
+                                            text="Return"
+                                            icon="sap-icon://undo"
+                                            type="Transparent"
+                                            visible="{= ${Status} === 'ASSIGNED' }"
+                                            press=".onReturnPress"/>
+                                    </cells>
+                                </ColumnListItem>
+                            </items>
+
+                        </Table>
+
+                    </items>
+                </VBox>
+
+            </VBox>
+
+        </content>
+
+    </Page>
+
+</mvc:View>

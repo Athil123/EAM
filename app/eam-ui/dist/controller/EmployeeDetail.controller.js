@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/core/mvc/Controller","eam/ui/model/formatter"],function(e,t){"use strict";return e.extend("eam.ui.controller.EmployeeDetail",{formatter:t,onInit:function(){this.getOwnerComponent().getRouter().getRoute("employeeDetail").attachPatternMatched(this._onPatternMatched,this)},_onPatternMatched:function(e){var t=e.getParameter("arguments").employeeId;this.getView().bindElement({path:"/Employees("+t+")"})},onNavBack:function(){this.getOwnerComponent().getRouter().navTo("employees")}})});
+//# sourceMappingURL=EmployeeDetail.controller.js.map

@@ -1,0 +1,192 @@
+<mvc:View
+    controllerName="eam.ui.controller.Reports"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    displayBlock="true">
+
+    <Page
+        id="reportsPage"
+        showHeader="false"
+        class="eamDashboardPage">
+
+        <content>
+
+            <VBox width="100%" class="eamDashboardContent">
+
+                <VBox class="eamPageHeader">
+                    <items>
+                        <Text text="INSIGHTS" class="eamPageEyebrow"/>
+                        <Title text="Reports" level="H1" class="eamPageTitle"/>
+                        <Text
+                            text="See how assets are distributed across departments."
+                            class="eamPageDescription"/>
+                    </items>
+                </VBox>
+
+                <!-- Assets by department -->
+                <VBox class="eamCard">
+                    <items>
+
+                        <HBox
+                            width="100%"
+                            alignItems="Center"
+                            justifyContent="SpaceBetween"
+                            wrap="Wrap"
+                            class="eamPanelHeader">
+                            <items>
+                                <VBox>
+                                    <items>
+                                        <Title text="Assets by Department" level="H2" class="eamSectionTitle"/>
+                                        <Text
+                                            text="Assets currently held and their total purchase value."
+                                            class="eamSectionDescription"/>
+                                    </items>
+                                </VBox>
+                                <Text text="{view>/summary}" class="eamToolbarCount"/>
+                            </items>
+                        </HBox>
+
+                        <Table
+                            id="departmentTable"
+                            class="eamTable"
+                            noDataText="No data available"
+                            updateFinished=".onDepartmentUpdateFinished"
+                            items="{
+                                path: '/DepartmentAssetReport',
+                                sorter: { path: 'AssignedAssets', descending: true }
+                            }">
+
+                            <columns>
+                                <Column><Text text="Department"/></Column>
+                                <Column minScreenWidth="Tablet" demandPopin="true"><Text text="Employees"/></Column>
+                                <Column><Text text="Assigned Assets"/></Column>
+                                <Column minScreenWidth="Tablet" demandPopin="true" hAlign="End"><Text text="Total Value"/></Column>
+                            </columns>
+
+                            <items>
+                                <ColumnListItem>
+                                    <cells>
+                                        <Text text="{Department}" class="eamCellPrimary"/>
+                                        <Text text="{Employees}"/>
+                                        <HBox alignItems="Center" class="eamBarCell">
+                                            <items>
+                                                <Text text="{AssignedAssets}" class="eamBarCount"/>
+                                                <ProgressIndicator
+                                                    percentValue="{
+                                                        parts: [
+                                                            { path: 'AssignedAssets' },
+                                                            { path: '/maxAssigned', model: 'view' }
+                                                        ],
+                                                        formatter: '.formatter.percentOfMax'
+                                                    }"
+                                                    showValue="false"
+                                                    height="8px"
+                                                    width="140px"
+                                                    class="eamBar eamBarAssigned"/>
+                                            </items>
+                                        </HBox>
+                                        <Text text="{
+                                            path: 'TotalValue',
+                                            type: 'sap.ui.model.odata.type.Decimal',
+                                            constraints: { precision: 12, scale: 2 },
+                                            formatOptions: { minFractionDigits: 2, maxFractionDigits: 2 }
+                                        }"/>
+                                    </cells>
+                                </ColumnListItem>
+                            </items>
+
+                        </Table>
+
+                    </items>
+                </VBox>
+
+                <!-- Currently assigned assets -->
+                <VBox class="eamCard eamPanel">
+                    <items>
+
+                        <HBox
+                            width="100%"
+                            alignItems="Center"
+                            justifyContent="SpaceBetween"
+                            wrap="Wrap"
+                            class="eamToolbarRow">
+                            <items>
+
+                                <HBox alignItems="Center" wrap="Wrap" class="eamFilterGroup">
+                                    <items>
+                                        <SearchField
+                                            placeholder="Search asset, serial or employee"
+                                            width="320px"
+                                            search=".onSearch"
+                                            class="eamSearchField"/>
+                                        <ComboBox
+                                            placeholder="All departments"
+                                            selectionChange=".onDepartmentChange"
+                                            change=".onDepartmentChange"
+                                            class="eamStatusSelect"
+                                            items="{
+                                                path: '/DepartmentAssetReport',
+                                                sorter: { path: 'Department' }
+                                            }">
+                                            <core:Item key="{Department}" text="{Department}"/>
+                                        </ComboBox>
+                                    </items>
+                                </HBox>
+
+                                <Text text="{view>/count} assigned assets" class="eamToolbarCount"/>
+
+                            </items>
+                        </HBox>
+
+                        <Table
+                            id="assignedTable"
+                            class="eamTable"
+                            growing="true"
+                            growingThreshold="20"
+                            updateFinished=".onAssignedUpdateFinished"
+                            noDataText="No assets are currently assigned"
+                            items="{
+                                path: '/CurrentlyAssignedAssets',
+                                sorter: { path: 'LastName' },
+                                parameters: { $count: true }
+                            }">
+
+                            <columns>
+                                <Column><Text text="Asset"/></Column>
+                                <Column minScreenWidth="Tablet" demandPopin="true"><Text text="Type"/></Column>
+                                <Column minScreenWidth="Desktop" demandPopin="true"><Text text="Serial Number"/></Column>
+                                <Column><Text text="Employee"/></Column>
+                                <Column minScreenWidth="Tablet" demandPopin="true"><Text text="Department"/></Column>
+                                <Column minScreenWidth="Desktop" demandPopin="true"><Text text="Assigned"/></Column>
+                            </columns>
+
+                            <items>
+                                <ColumnListItem>
+                                    <cells>
+                                        <Text text="{AssetName}" class="eamCellPrimary"/>
+                                        <Text text="{AssetType}"/>
+                                        <Text text="{SerialNumber}"/>
+                                        <Text text="{FirstName} {LastName}"/>
+                                        <Text text="{Department}"/>
+                                        <Text text="{
+                                            path: 'AssignedDate',
+                                            type: 'sap.ui.model.odata.type.Date',
+                                            formatOptions: { style: 'medium' }
+                                        }"/>
+                                    </cells>
+                                </ColumnListItem>
+                            </items>
+
+                        </Table>
+
+                    </items>
+                </VBox>
+
+            </VBox>
+
+        </content>
+
+    </Page>
+
+</mvc:View>

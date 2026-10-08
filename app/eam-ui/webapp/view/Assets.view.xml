@@ -1,0 +1,169 @@
+<mvc:View
+    controllerName="eam.ui.controller.Assets"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    displayBlock="true">
+
+    <Page
+        id="assetsPage"
+        showHeader="false"
+        class="eamDashboardPage">
+
+        <content>
+
+            <VBox width="100%" class="eamDashboardContent">
+
+                <HBox
+                    width="100%"
+                    alignItems="End"
+                    justifyContent="SpaceBetween"
+                    wrap="Wrap"
+                    class="eamPageHeaderRow">
+                    <items>
+
+                        <VBox class="eamPageHeader">
+                            <items>
+                                <Text text="INVENTORY" class="eamPageEyebrow"/>
+                                <Title text="Assets" level="H1" class="eamPageTitle"/>
+                                <Text text="Track every asset and its current status." class="eamPageDescription"/>
+                            </items>
+                        </VBox>
+
+                        <Button
+                            text="Add Asset"
+                            icon="sap-icon://add"
+                            type="Emphasized"
+                            press=".onAddPress"
+                            class="eamPrimaryAction"/>
+
+                    </items>
+                </HBox>
+
+                <VBox class="eamCard">
+                    <items>
+
+                        <HBox
+                            width="100%"
+                            alignItems="Center"
+                            justifyContent="SpaceBetween"
+                            wrap="Wrap"
+                            class="eamToolbarRow">
+                            <items>
+
+                                <HBox alignItems="Center" wrap="Wrap" class="eamFilterGroup">
+                                    <items>
+                                        <SearchField
+                                            placeholder="Search assets"
+                                            width="320px"
+                                            search=".onSearch"
+                                            class="eamSearchField"/>
+
+                                        <Select selectedKey="ALL" change=".onStatusChange" class="eamStatusSelect">
+                                            <core:Item key="ALL" text="All statuses"/>
+                                            <core:Item key="AVAILABLE" text="Available"/>
+                                            <core:Item key="ASSIGNED" text="Assigned"/>
+                                            <core:Item key="REPAIR" text="Repair"/>
+                                            <core:Item key="RETIRED" text="Retired"/>
+                                        </Select>
+
+                                        <Select selectedKey="ALL" change=".onTypeChange" class="eamStatusSelect">
+                                            <core:Item key="ALL" text="All types"/>
+                                            <core:Item key="Laptop" text="Laptop"/>
+                                            <core:Item key="Monitor" text="Monitor"/>
+                                            <core:Item key="Phone" text="Phone"/>
+                                            <core:Item key="Tablet" text="Tablet"/>
+                                        </Select>
+
+                                        <Select selectedKey="NAME_ASC" change=".onSortChange" class="eamStatusSelect">
+                                            <core:Item key="NAME_ASC" text="Sort: Name A–Z"/>
+                                            <core:Item key="NAME_DESC" text="Sort: Name Z–A"/>
+                                            <core:Item key="PRICE_DESC" text="Sort: Price high–low"/>
+                                            <core:Item key="PRICE_ASC" text="Sort: Price low–high"/>
+                                            <core:Item key="DATE_DESC" text="Sort: Newest purchase"/>
+                                        </Select>
+                                    </items>
+                                </HBox>
+
+                                <Text text="{view>/count} assets" class="eamToolbarCount"/>
+
+                            </items>
+                        </HBox>
+
+                        <Table
+                            id="assetsTable"
+                            class="eamTable"
+                            growing="true"
+                            growingThreshold="20"
+                            updateFinished=".onUpdateFinished"
+                            noDataText="No assets found"
+                            items="{
+                                path: '/Assets',
+                                sorter: { path: 'AssetName' },
+                                parameters: { $count: true }
+                            }">
+
+                            <columns>
+                                <Column><Text text="Asset"/></Column>
+                                <Column minScreenWidth="Tablet" demandPopin="true"><Text text="Type"/></Column>
+                                <Column minScreenWidth="Desktop" demandPopin="true"><Text text="Serial Number"/></Column>
+                                <Column minScreenWidth="Desktop" demandPopin="true"><Text text="Purchased"/></Column>
+                                <Column minScreenWidth="Tablet" demandPopin="true" hAlign="End"><Text text="Price"/></Column>
+                                <Column><Text text="Status"/></Column>
+                                <Column width="6.5rem" hAlign="End"><Text text=""/></Column>
+                            </columns>
+
+                            <items>
+                                <ColumnListItem type="Navigation" press=".onItemPress">
+                                    <cells>
+                                        <Text text="{AssetName}" class="eamCellPrimary"/>
+                                        <Text text="{AssetType}"/>
+                                        <Text text="{SerialNumber}"/>
+                                        <Text text="{
+                                            path: 'PurchaseDate',
+                                            type: 'sap.ui.model.odata.type.Date',
+                                            formatOptions: { style: 'medium' }
+                                        }"/>
+                                        <Text text="{
+                                            path: 'Price',
+                                            type: 'sap.ui.model.odata.type.Decimal',
+                                            constraints: { precision: 10, scale: 2 },
+                                            formatOptions: { minFractionDigits: 2, maxFractionDigits: 2 }
+                                        }"/>
+                                        <ObjectStatus
+                                            text="{Status}"
+                                            state="{
+                                                path: 'Status',
+                                                formatter: '.formatter.assetState'
+                                            }"/>
+                                        <HBox justifyContent="End" class="eamRowActions">
+                                            <items>
+                                                <Button
+                                                    icon="sap-icon://edit"
+                                                    type="Transparent"
+                                                    tooltip="Edit asset"
+                                                    press=".onEditPress"/>
+                                                <Button
+                                                    icon="sap-icon://delete"
+                                                    type="Transparent"
+                                                    tooltip="Delete asset"
+                                                    press=".onDeletePress"
+                                                    class="eamDeleteButton"/>
+                                            </items>
+                                        </HBox>
+                                    </cells>
+                                </ColumnListItem>
+                            </items>
+
+                        </Table>
+
+                    </items>
+                </VBox>
+
+            </VBox>
+
+        </content>
+
+    </Page>
+
+</mvc:View>

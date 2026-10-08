@@ -1,0 +1,58 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+
+    <Dialog
+        title="{employee>/title}"
+        contentWidth="440px"
+        stretchOnPhone="true"
+        class="eamDialog">
+
+        <content>
+            <VBox class="sapUiSmallMargin eamDialogContent">
+                <items>
+
+                    <Label text="First name" required="true"/>
+                    <Input
+                        value="{employee>/FirstName}"
+                        maxLength="50"
+                        valueState="{employee>/state/FirstName}"
+                        valueStateText="First name is required"
+                        liveChange=".onFieldChange"/>
+
+                    <Label text="Last name" required="true"/>
+                    <Input
+                        value="{employee>/LastName}"
+                        maxLength="50"
+                        valueState="{employee>/state/LastName}"
+                        valueStateText="Last name is required"
+                        liveChange=".onFieldChange"/>
+
+                    <Label text="Email" required="true"/>
+                    <Input
+                        type="Email"
+                        value="{employee>/Email}"
+                        maxLength="100"
+                        valueState="{employee>/state/Email}"
+                        valueStateText="Enter a valid email address"
+                        liveChange=".onFieldChange"/>
+
+                    <Label text="Department"/>
+                    <Input
+                        value="{employee>/Department}"
+                        maxLength="100"/>
+
+                </items>
+            </VBox>
+        </content>
+
+        <beginButton>
+            <Button text="{employee>/confirmText}" type="Emphasized" press=".onSaveEmployee"/>
+        </beginButton>
+        <endButton>
+            <Button text="Cancel" press=".onCancelEmployee"/>
+        </endButton>
+
+    </Dialog>
+
+</core:FragmentDefinition>
